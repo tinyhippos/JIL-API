@@ -27,6 +27,6 @@ function WidgetManager() {
  * @returns
  * @type String
  */
-WidgetManager.prototype.checkWidgetInstallationStatus (widgetId, widgetName, widgetVersion) {
+WidgetManager.prototype.checkWidgetInstallationStatus = function (widgetId, widgetName, widgetVersion) {
 	return "";
 };

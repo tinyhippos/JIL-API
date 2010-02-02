@@ -127,6 +127,23 @@ PIM.prototype.getAvailableAddressGroupNames = function() {
 };
 
 /**
+ * Find all AddressBookItems currently associated with the supplied group
+ * name.Wildcards are supported and searches are case-insensitive.E.g., 
+ * assigning "*smith*" to the "groupName" parameter will return all contacts
+ * found within any group with "smith" in the name.his is an asynchronous 
+ * function, and will invoke PIM.onAddressBookItemsFound() when search 
+ * completes.<br>
+ * e.g.<br>
+ * &nbsp;&nbsp;&nbsp;&nbsp;var myCallBack = function(AddressBookItems){...}<br> 
+ * &nbsp;&nbsp;&nbsp;&nbsp;Widget.PIM.onAddressBookItemsFound = myCallBack;<br>    
+ * &nbsp;&nbsp;&nbsp;&nbsp;Widget.PIM.getAddressGroupMembers("family");<br> 
+ * 
+ * @param {groupName} group name of the contacts 
+ */
+PIM.prototype.getAddressBookGroupMembers = function(groupName){
+};
+
+/**
  * Find all contacts matching the supplied comparison contact. Wildcard are supported 
  * and searches are case-insensitive.<br>
  * E.g., assigning "*smith*" to the "full_name" attribute of the comparisonContact will 

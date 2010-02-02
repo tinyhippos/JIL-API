@@ -21,7 +21,7 @@ function Multimedia() {
 };
 
 /**
- * Get audio volume. Value range is 0 - 15, where 0 is off. <br>
+ * Get audio volume. Value range is 0 - 10, where 0 is off. <br>
  * <br>
  * e.g.<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;var v = Widget.Multimedia.getVolume();

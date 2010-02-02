@@ -44,4 +44,14 @@ MessageFolderTypes.prototype.INBOX = "inbox";
  * 
  * @type String
  */
+
 MessageFolderTypes.prototype.OUTBOX = "outbox";
+/**
+ * The sentbox folder. <br>
+ * <br>
+ * e.g.<br>
+ * &nbsp;&nbsp;&nbsp;&nbsp;var msgFolderType = Widget.Messaging.MessageFolderTypes.SENTBOX;
+ * 
+ * @type String
+ */
+MessageFolderTypes.prototype.SENTBOX = "sentbox";

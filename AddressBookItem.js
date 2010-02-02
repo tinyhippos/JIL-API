@@ -101,7 +101,7 @@ AddressBookItem.prototype.setAttributeValue = function(attribute, value) {
  * <br>
  * e.g.<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;var contact = Widget.PIM.getAddressBookItem("1");<br>
- * &nbsp;&nbsp;&nbsp;&nbsp; var groups = new Array("group1", "group2");<br>
+ * &nbsp;&nbsp;&nbsp;&nbsp; var groups = new Array("Friends", "Family");<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;contact.setAddressGroupNames(groups);<br>
  * 
  * @param {Array} groups an array of String containing the group names that the contact 
