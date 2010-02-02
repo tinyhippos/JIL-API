@@ -3,7 +3,7 @@
  *               properties of JavaScript objects: Multimedia.
  * @version 0.1
  */
-Multimedia.prototype = new Object();
+Multimedia.prototype = new Widget();
 
 /**
  * @class Multimedia is the container object for JIL Multimedia objects. <br>

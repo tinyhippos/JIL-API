@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-CalendarItem.prototype = new Object();
+CalendarItem.prototype = new PIM();
 
 /**
  * @class CalendarItem represents a PIM calendar event. A calendar event consists of 

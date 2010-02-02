@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-AddressBookItem.prototype = new Object();
+AddressBookItem.prototype = new PIM();
 
 /**
  * @class AddressBookItem represents a PIM Contact. A contact consists of values 

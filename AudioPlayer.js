@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-AudioPlayer.prototype = new Object();
+AudioPlayer.prototype = new Multimedia();
 
 /**
  * @class AudioPlayer is the object for JIL Audio player capabilities.<br>

@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-MessageQuantities.prototype = new Object();
+MessageQuantities.prototype = new Messaging();
 
 /**
  * @class MessageQuantities contains various message quantities that would apply to Folder 

@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-PowerInfo.prototype = new Object();
+PowerInfo.prototype = new Device();
 
 /**
  * @class PowerInfo is a sub-object of <I>Widget.Device</I>.<br>

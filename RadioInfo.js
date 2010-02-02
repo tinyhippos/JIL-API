@@ -4,7 +4,7 @@
  * 
  * @version 0.1 
  */
-RadioInfo.prototype = new Object();
+RadioInfo.prototype = new Device();
 
 /**
  * @class RadioInfo is a sub-object of <I>Widget.Device</I>.<br>
@@ -27,6 +27,13 @@ RadioInfo.prototype.isRoaming = new Boolean();
  * @type Number
  */
 RadioInfo.prototype.radioSignalStrengthPercent = new Number();
+
+/**
+ * This field indicates the singal source of the radio network. Possible values are represented by RadioSignalSourceTypes.
+ *
+ * @type String
+ */
+RadioInfo.prototype.RadioSignalSourceTypes = new RadioSignalSourceTypes();
 
 /**
  * Call back method to invoke when the signal source changes. <br>

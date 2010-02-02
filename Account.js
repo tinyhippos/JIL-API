@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Account.prototype = new Object();
+Account.prototype = new Messaging();
 
 /**
  * @class Account defines the Email account Object which is referenced by some of 

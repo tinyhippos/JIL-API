@@ -48,6 +48,20 @@ Widget.prototype.Telephony = new Telephony();
 Widget.prototype.Multimedia = new Multimedia();
 
 /**
+ * Static Exception object associated with a widget
+ * 
+ * @type Exception
+ */
+Widget.prototype.Exception = new Exception();
+
+/**
+ * Static ExceptionTypes object associated with a widget
+ * 
+ * @type ExceptionTypes
+ */
+Widget.prototype.ExceptionTypes = new ExceptionTypes();
+
+/**
  * This is a call back method which will be triggered when the widget is restored 
  * to default display mode. <br>
  * <br>
@@ -134,7 +148,7 @@ Widget.prototype.preferenceForKey = function(key) {
  * @returns
  * @type void
  */
-Widget.prototype.setPreferenceForKey = function(key, preference) {
+Widget.prototype.setPreferenceForKey = function(preference, key) {
 };
 
 

@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Messaging.prototype = new Object();
+Messaging.prototype = new Widget();
 
 /**
  * @class Messaging is the container object for JIL Messaging objects. <br>
@@ -358,7 +358,7 @@ Messaging.prototype.deleteEmailAccount = function(AccountId) {
 Messaging.prototype.Account = new Account();
 
 /**
- * Attachment types. <br>
+ * Attachment. <br>
  * <br>
  * e.g.<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;var attachment = new Widget.Messaging.Attachment();<br>
@@ -382,7 +382,7 @@ Messaging.prototype.Message = new Message();
 Messaging.prototype.MessageFolderTypes = new MessageFolderTypes();
 
 /**
- * MessageQuantities types. 
+ * MessageQuantities. 
  * 
  * @type MessageQuantities
  */

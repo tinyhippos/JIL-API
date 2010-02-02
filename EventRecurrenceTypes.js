@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-EventRecurrenceTypes.prototype = new Object();
+EventRecurrenceTypes.prototype = new PIM();
 
 /**
  * @class EventRecurrenceTypes represents the reminder you can select.<br>

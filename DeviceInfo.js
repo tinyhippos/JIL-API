@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-DeviceInfo.prototype = new Object();
+DeviceInfo.prototype = new Device();
 
 /**
  * @class DeviceInfo is a sub-object of <I>Widget.Device</I>. <br>

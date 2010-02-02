@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-VideoPlayer.prototype = new Object();
+VideoPlayer.prototype = new Multimedia();
 
 /**
  * @class VideoPlayer is the object for JIL Video play capabilities. <br>

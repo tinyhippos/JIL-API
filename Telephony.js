@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Telephony.prototype = new Object();
+Telephony.prototype = new Widget();
 
 /**
  * @class Telephony is the container object for JIL Telephony objects. <br>

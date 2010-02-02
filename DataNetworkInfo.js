@@ -4,7 +4,7 @@
  * 
  * @version 0.1 
  */
-DataNetworkInfo.prototype = new Object();
+DataNetworkInfo.prototype = new Device();
 
 /**
  * @class DataNetworkInfo is a sub-object of <I>Widget.Device</I>.<br>
@@ -52,7 +52,13 @@ DataNetworkInfo.prototype.onNetworkConnectionChanged = function(newConnectionNam
  * @returns the name of the network connection, if the specified connect is not existed, return null.
  * @type String  
  */
-
 DataNetworkInfo.prototype.getNetworkConnectionName =function(networkConnecionType) {
 	return new String();
 };
+
+/**
+ * DataNetworkConnectionTypes contains common values that are referenced by the       DataNetworkInfo.networkConnectionType.
+ * 
+ * @type DataNetworkConnectionTypes
+ */
+DataNetworkInfo.prototype.DataNetworkConnectionTypes = new DataNetworkConnectionTypes();

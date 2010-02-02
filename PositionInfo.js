@@ -4,7 +4,7 @@
  * 
  * @version 0.1 
  */
-PositionInfo.prototype = new Object();
+PositionInfo.prototype = new Device();
 
 /**
  * @class PositionInfo is the container object for JIL PositionInfo object. <br>

@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Message.prototype = new Object();
+Message.prototype = new Messaging();
 
 /**
  * @class Message is a class which represents a message. It provides important

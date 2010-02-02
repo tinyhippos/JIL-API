@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Camera.prototype = new Object();
+Camera.prototype = new Multimedia();
 
 /**
  * @class Camera is the object for JIL Camera capabilities<br>

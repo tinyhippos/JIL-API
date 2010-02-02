@@ -4,7 +4,7 @@
  *  
  * @version 0.1 
  */
-File.prototype = new Object();
+File.prototype = new Device();
 
 /**
  * @class File is a sub-object of <I>Widget.Device</I>.<br>

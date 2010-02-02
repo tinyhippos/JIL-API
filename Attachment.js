@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Attachment.prototype = new Object();
+Attachment.prototype = new Messaging();
 
 /**
  * @class Attachment is a class which represents an Attachment. It provides 

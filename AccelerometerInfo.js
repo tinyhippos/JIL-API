@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-AccelerometerInfo.prototype = new Object();
+AccelerometerInfo.prototype = new DeviceStateInfo();
 
 /**
  * @class AccelerometerInfo is a sub-object of <I>DeviceStateInfo</I>.<br>

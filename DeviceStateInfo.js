@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-DeviceStateInfo.prototype = new Object();
+DeviceStateInfo.prototype = new Device();
 
 /**
  * @class DeviceStateInfo provides device state info.<br>

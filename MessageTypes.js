@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-MessageTypes.prototype = new Object();
+MessageTypes.prototype = new Messaging();
 
 /**
  * @class MessageTypes contains values that are referenced by the message type parameter 

@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-AccountInfo.prototype = new Object();
+AccountInfo.prototype = new Device();
 
 /**
  * @class AccountInfo is a sub-object of <I>Widget.Device</I>.<br>
@@ -53,7 +53,7 @@ AccountInfo.prototype.phoneOperatorName = "";
 AccountInfo.prototype.userAccountBalance = "";
 
 /**
- * This indicates the type of billing for the account. Valid values include â€˜prepaidâ€™, 
+ * This indicates the type of billing for the account. Valid values include ‘prepaid’, 
  * 'postpaid', and 'other'. This is expected to use network resources.
  * 
  * @type String

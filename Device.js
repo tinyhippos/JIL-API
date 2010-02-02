@@ -4,7 +4,7 @@
  *  
  * @version 0.1 
  */
-Device.prototype = new Object();
+Device.prototype = new Widget();
 
 /**
  * @class Device provides access to the Device. <br>
@@ -172,7 +172,8 @@ Device.prototype.copyFolder = function(originalFolder, destinationFolder) {
 };
 */
 
-/**
+
+/*
  * This method create the file located at the specified full name. The full name
  * includes the path and file name. <br>
  * <br>
@@ -184,10 +185,11 @@ Device.prototype.copyFolder = function(originalFolder, destinationFolder) {
  * 
  * @returns A boolean is returned indicating the success of the operation.
  * @type Boolean
- */
+
 Device.prototype.createFile = function(destinationFullName) {
 	return new Boolean();
 };
+ */
 
 
 /**
@@ -422,4 +424,11 @@ Device.prototype.widgetEngineProvider = "JIL";
  * 
  * @type String
  */
-Device.prototype.widgetEngineVersion = "1.0";
+Device.prototype.widgetEngineVersion = "1.5";
+
+/**
+ * ApplicationTypes contains common values that are referenced by the Device.launchApplication.
+ * 
+ * @type String
+ */
+Device.prototype.ApplicationTypes = new ApplicationTypes();

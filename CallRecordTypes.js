@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-CallRecordTypes.prototype = new Object();
+CallRecordTypes.prototype = new Telephony();
 
 /**
  * @class CallRecordTypes represents the type of call record in the call log. <br>

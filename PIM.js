@@ -5,7 +5,7 @@
  * @version 0.1 
  */
 
-PIM.prototype = new Object();
+PIM.prototype = new Widget();
 
 /**
  * @class PIM is the container object for JIL PIM objects. <br>
@@ -22,7 +22,7 @@ Widget.PIM.prototype= new PIM();
  * &nbsp;&nbsp;&nbsp;&nbsp;contact.setAttributeValue("mobilePhone", "10086");<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;Widget.PIM.addAddressBookItem(contact);<br>
  * 
- * @param {AddressBookItem} contact A Contact object to be added
+ * @param {AddressBookItem} contact A contact object to be added
  * 
  * @returns 
  * @type void
@@ -136,7 +136,7 @@ PIM.prototype.getAvailableAddressGroupNames = function() {
  * e.g.<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;var myCallBack = function(AddressBookItems){...}<br> 
  * &nbsp;&nbsp;&nbsp;&nbsp;Widget.PIM.onAddressBookItemsFound = myCallBack;<br>    
- * &nbsp;&nbsp;&nbsp;&nbsp;Widget.PIM.getAddressGroupMembers("family");<br> 
+ * &nbsp;&nbsp;&nbsp;&nbsp;Widget.PIM.getAddressBookGroupMembers("family");<br> 
  * 
  * @param {groupName} group name of the contacts 
  */

@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-Config.prototype = new Object();
+Config.prototype = new DeviceStateInfo();
 
 /**
  * @class Config<br>
@@ -45,7 +45,7 @@ Config.prototype.setAsWallpaper = function(wallpaperFileurl) {
 };
 
 /**
- * The volume of the ringtone. Possible values are from 0 to 7.
+ * The volume of the ringtone. Possible values are from 0 to 10.
  * <I>getMsgRingtoneVolume</I>.
  *
  * @type Number
@@ -54,7 +54,7 @@ Config.prototype.ringtoneVolume = new Number();
 
 /**
  * The volume of the ringtone to be played when a new message arrives. 
- * Possible values are from 0 to 7, where 0 is off, and 
+ * Possible values are from 0 to 10, where 0 is off, and 
  * 
  * @type Number
  */

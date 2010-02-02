@@ -4,7 +4,7 @@
  *
  * @version 0.1 
  */
-MessageFolderTypes.prototype = new Object();
+MessageFolderTypes.prototype = new Messaging();
 
 /**
  * @class MessageFolderTypes contains common values that are referenced by the 
