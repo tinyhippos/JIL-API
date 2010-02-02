@@ -1,0 +1,378 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="Message.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>Message.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		This file is to be used for listing all functions and properties of 
+ JavaScript objects: Message.
+
+ <BR/><BR/><B>Version: </B>0.1<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="Message.html">Message</a></b></td>
+    <td>Message is a class which represents a message.</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/** 
+ * <span class="attrib">@fileoverview</span> This file is to be used for listing all functions and properties of 
+ * JavaScript objects: Message.
+ *
+ * <span class="attrib">@version</span> 0.1 
+ */</span>
+Message.<span class="reserved">prototype</span> = new Object();
+
+<span class="comment">/**
+ * <span class="attrib">@class</span> Message is a class which represents a message. It provides important
+ * information about a message.&lt;br&gt;
+ *         
+ * <span class="attrib">@constructor</span> Construct a new Message object.
+ */</span>
+<span class="reserved">function</span> Message() {
+};
+
+<span class="comment">/**
+ * The Id of this Message.
+ * 
+ * <span class="attrib">@type</span> String
+ */</span>
+Message.<span class="reserved">prototype</span>.messageId = <span class="literal">""</span>;
+
+<span class="comment">/**
+ * The callback number of this Message.
+ * 
+ * <span class="attrib">@type</span> String
+ */</span>
+Message.<span class="reserved">prototype</span>.callbackNumber = <span class="literal">""</span>;
+
+<span class="comment">/**
+ * The destination of this Message. This is an array of String.
+ * 
+ * <span class="attrib">@type</span> Array
+ */</span>
+Message.<span class="reserved">prototype</span>.destinationAddress = new Array();
+
+<span class="comment">/**
+ * The flag "read" for this Message.
+ * 
+ * <span class="attrib">@type</span> Boolean
+ */</span>
+Message.<span class="reserved">prototype</span>.isRead = new Boolean();
+
+<span class="comment">/**
+ * The priority of this Message.
+ * 
+ * <span class="attrib">@type</span> Boolean
+ */</span>
+Message.<span class="reserved">prototype</span>.messagePriority = null;
+
+<span class="comment">/**
+ * The type of this Message.
+ * 
+ * <span class="attrib">@type</span> String
+ */</span>
+Message.<span class="reserved">prototype</span>.messageType = <span class="literal">""</span>;
+
+<span class="comment">/**
+ * The subject of this Message.
+ * 
+ * <span class="attrib">@type</span> String
+ */</span>
+Message.<span class="reserved">prototype</span>.subject = <span class="literal">""</span>;
+
+<span class="comment">/**
+ * The body of this Message.
+ * 
+ * <span class="attrib">@type</span> String
+ */</span>
+Message.<span class="reserved">prototype</span>.body = <span class="literal">""</span>;
+
+<span class="comment">/**
+ * The source address of this Message. 
+ *
+ * <span class="attrib">@type</span> String
+ */</span>
+Message.<span class="reserved">prototype</span>.sourceAddress = <span class="literal">""</span>;
+
+<span class="comment">/**
+ * The validityPeriodHours of this Message. &lt;br&gt;
+ * &lt;br&gt;
+ * For SMS, the valid value for this attribute is:&lt;br&gt;
+ * validityPeriodHours = 1  VALIDITY_PERIOD_1_HOUR&lt;br&gt;
+ * validityPeriodHours = 2  VALIDITY_PERIOD_12_HOUR&lt;br&gt;
+ * validityPeriodHours = 3  VALIDITY_PERIOD_1_DAY&lt;br&gt;
+ * validityPeriodHours = 4  VALIDITY_PERIOD_1_WEEK&lt;br&gt;
+ * validityPeriodHours = 5  ALIDITY_PERIOD_UNLIMITED 
+ *
+ * <span class="attrib">@type</span> Number 
+ */</span>
+Message.<span class="reserved">prototype</span>.validityPeriodHours = new Number();
+
+<span class="comment">/**
+ * The time of this Message.
+ * 
+ * <span class="attrib">@type</span> Date
+ */</span>
+Message.<span class="reserved">prototype</span>.time = new Date();
+
+<span class="comment">/**
+ * The Cc Address of this Message. This is an array of String.
+ * 
+ * <span class="attrib">@type</span> Array
+ */</span>
+Message.<span class="reserved">prototype</span>.ccAddress = new Array();
+
+<span class="comment">/**
+ * The Bcc Address of this Message. This is an array of String.
+ * 
+ * <span class="attrib">@type</span> Array
+ */</span>
+Message.<span class="reserved">prototype</span>.bccAddress = new Array()
+
+<span class="comment">/**
+ * The attachments of this Message. This is an array of Attachment.
+ * 
+ * <span class="attrib">@type</span> Array
+ */</span>
+Message.<span class="reserved">prototype</span>.attachments = new Array();
+
+<span class="comment">/**
+ * Add a file to a Message as an attachment. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg = Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.MMSMessage);&lt;br&gt; 
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAttachment("/sdcard/sun.jpg");
+ *
+ * <span class="attrib">@param</span> {String} fileFullName the full name of the file to be added as an attachment.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Message.<span class="reserved">prototype</span>.addAttachment = <span class="reserved">function</span>(fileFullName) {
+};
+
+<span class="comment">/**
+ * Delete an attachment from the Message. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg=Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.MMSMessage);&lt;br&gt; 
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAttachment("/sdcard/sun.jpg");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAttachment("/sdcard/moon.jpg");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var att = msg.attachments;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.deleteAttachment(att[0]);
+ *
+ * <span class="attrib">@param</span> {Attachment} attachment the attachment to be delete from Message.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Message.<span class="reserved">prototype</span>.deleteAttachment = <span class="reserved">function</span>(attachment) {
+};
+
+
+<span class="comment">/**
+ * Save an attachment in the message. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Message.saveAttachment("/sdcard/sun.jpg", attachment);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} fileFullName  the full destination file name.
+ * <span class="attrib">@param</span> {Attachment} attachment - the attachment to be saved.
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Message.<span class="reserved">prototype</span>.saveAttachment = <span class="reserved">function</span>(fileFullName, attachment) {
+};
+
+<span class="comment">/**
+ * Add an address for the message. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg = Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.SMSMessage);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAddress("destination", "10086")&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} type type of the address to be added. Possible values are "destination", "cc" and "bcc".
+ * <span class="attrib">@param</span> {String} address Address to be added to the destination address list.
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Message.<span class="reserved">prototype</span>.addAddress = <span class="reserved">function</span>(type, address) {
+}
+
+<span class="comment">/**
+ * Delete an address from the message's destination addresses. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg=Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.SMSMessage);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAddress("cc", "10086")&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAddress("cc", "13800138000")&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.deleteAddress("cc", "10086")&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} type type of the address to be added. Possible values are "destination", "cc" and "bcc".
+ * <span class="attrib">@param</span> {String} address Address to be deleted from the destination address list. 
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Message.<span class="reserved">prototype</span>.deleteAddress = <span class="reserved">function</span>(type, address) {
+}
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Aug 14 10:24:05 2009</div>
+</body>
+</html>

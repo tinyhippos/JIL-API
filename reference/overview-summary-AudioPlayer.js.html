@@ -1,0 +1,307 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="AudioPlayer.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>AudioPlayer.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		This file is to be used for listing all functions and properties of 
+ JavaScript objects: AudioPlayer.
+
+ <BR/><BR/><B>Version: </B>0.1<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="AudioPlayer.html">AudioPlayer</a></b></td>
+    <td>AudioPlayer is the object for JIL Audio player capabilities.<br>
+ <br>
+ AudioPlayer is a sub-object of <I>Multimedia</I>.</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/** 
+ * <span class="attrib">@fileoverview</span> This file is to be used for listing all functions and properties of 
+ * JavaScript objects: AudioPlayer.
+ *
+ * <span class="attrib">@version</span> 0.1 
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span> = new Object();
+
+<span class="comment">/**
+ * <span class="attrib">@class</span> AudioPlayer is the object for JIL Audio player capabilities.&lt;br&gt;
+ * &lt;br&gt;
+ * AudioPlayer is a sub-object of &lt;I&gt;Multimedia&lt;/I&gt;. We use AudioPlayer in this way:
+ * Widget.Multimedia.AudioPlayer.XXX&lt;br&gt;
+ */</span>
+<span class="reserved">function</span> AudioPlayer() {
+};
+
+<span class="comment">/**
+ * Open an audio file which will be played by &lt;i&gt;play&lt;/i&gt; function. &lt;br&gt; 
+ * The widget engine is responsible for file caching, etc. The following protocols 
+ * are supported by the open() function: "file://", "rtsp://","http://".&lt;br&gt;
+ * If the parameter string doesn't start with the protocol syntax listed above, 
+ * the widget engine will search the media files in the widget package.&lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("file:///sdcard/sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AideoPlayer.open("sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("http://www.sample.com/sample.mp3");
+ * 
+ * <span class="attrib">@param</span> {String} fileUrl the url of the audio file to be played.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span>.open = <span class="reserved">function</span>(fileUrl) {
+};
+
+<span class="comment">/**
+ * Play the audio which is opened by &lt;i&gt;open&lt;/i&gt; function. &lt;br&gt; 
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.play(5);&lt;br&gt;
+ * 
+ * <span class="attrib">@param</span> {Number} repeatTimes an integer value specifies how many times the 
+ * media file should be played.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span>.play = <span class="reserved">function</span>(repeatTimes) {
+};
+
+<span class="comment">/**
+ * Pause the audio which is played by &lt;i&gt;play&lt;/i&gt; function. &lt;br&gt; 
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.onStateChange = myCallback(state);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("file:///sdcard/sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.play(5);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallback(state) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (state == "playing") {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.pause();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span>.pause = <span class="reserved">function</span>() {
+};
+
+<span class="comment">/**
+ * Resume the audio which is paused by &lt;i&gt;pause&lt;/i&gt; function. &lt;br&gt; 
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.onStateChange = myCallback(state);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("file:///sdcard/sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.play(5);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.pause();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallback(state) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (state == "paused") {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.resume();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span>.resume = <span class="reserved">function</span>() {
+};
+
+<span class="comment">/**
+ * Stop the audio which is played by &lt;i&gt;play&lt;/i&gt; function. &lt;br&gt; 
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.onStateChange = myCallback(state);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("file:///sdcard/sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.play(5);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallback(state) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (state == "playing") {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.stop();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span>.stop = <span class="reserved">function</span>() {
+};
+
+<span class="comment">/**
+ * Call back method to invoke when the state of the audio player changes. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.onStateChange = myCallback(state);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.open("file:///sdcard/sample.mp3");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallback(state) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (state == "opened") {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.AudioPlayer.play();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} state indicating the current state of the audio player. 
+ * Possible values are "InitStatus", "opened","stopped" "paused", and "playing".
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+AudioPlayer.<span class="reserved">prototype</span>.onStateChange = <span class="reserved">function</span>(state) {
+}
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Aug 14 10:24:05 2009</div>
+</body>
+</html>

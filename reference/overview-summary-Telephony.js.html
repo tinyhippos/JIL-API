@@ -1,0 +1,364 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="Telephony.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>Telephony.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		This file is used for listing all functions and properties of 
+ JavaScript object: Telephony.
+
+ <BR/><BR/><B>Version: </B>0.1<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="Telephony.html">Telephony</a></b></td>
+    <td>Telephony is the container object for JIL Telephony objects.</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/** 
+ * <span class="attrib">@fileoverview</span> This file is used for listing all functions and properties of 
+ * JavaScript object: Telephony.
+ *
+ * <span class="attrib">@version</span> 0.1 
+ */</span>
+Telephony.<span class="reserved">prototype</span> = new Object();
+
+<span class="comment">/**
+ * <span class="attrib">@class</span> Telephony is the container object for JIL Telephony objects. &lt;br&gt;
+ * &lt;br&gt;
+ * Telephony is a sub-object of &lt;I&gt;Widget&lt;/I&gt;. So we use Telephony in this way: 
+ * Widget.Telephony.XXX&lt;br&gt;
+ */</span>
+<span class="reserved">function</span> Telephony() {
+};
+Widget.Telephony.<span class="reserved">prototype</span>= new Telephony();
+<span class="comment">/**
+ * Automatically initiates an outgoing voice call with the string specified. Expected to 
+ * invoke the native dialer application.&lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.initiateVoiceCall("10086");
+ * 
+ * <span class="attrib">@param</span> {String} phoneNumber a string containing the phone number to be dialed for the voice call.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Telephony.<span class="reserved">prototype</span>.initiateVoiceCall = <span class="reserved">function</span>(phoneNumber) {
+};
+
+<span class="comment">/**
+ * Get the number of call records from the call log for the specified call record type. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.getCallRecordCnt(Widget.Telephony.CallRecordTypes.MISSED);
+ * 
+ * <span class="attrib">@param</span> {String} callRecordType A String value corresponding to a CallRecordTypes entry
+ * 
+ * <span class="attrib">@returns</span> the total number of records for the specified type. 0 is returned if the 
+ * type is unknown
+ * <span class="attrib">@type</span> Number 
+ */</span>
+Telephony.<span class="reserved">prototype</span>.getCallRecordCnt = <span class="reserved">function</span>(callRecordType) {
+	<span class="reserved">return</span> new Number();
+};
+
+<span class="comment">/**
+ * Retrieves the call record of the specified call record type by index. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.getCallRecord(Widget.Telephony.CallRecordTypes.MISSED, "10");
+ * 
+ * <span class="attrib">@param</span> {String} callRecordType A String value corresponding to a CallRecordTypes entry
+ * <span class="attrib">@param</span> {String} id String value uniquely identifies the call record in the call log. 
+ * This value is assigned by the widget engine. 
+ * 
+ * <span class="attrib">@returns</span>  a CallRecord object specified by &lt;i&gt;id&lt;/i&gt; parameter
+ * <span class="attrib">@type</span> CallRecord
+ */</span>
+Telephony.<span class="reserved">prototype</span>.getCallRecord = <span class="reserved">function</span>(callRecordType, id) {
+	<span class="reserved">return</span> new CallRecord();
+};
+
+<span class="comment">/**
+ * Deletes the call record of the specified call record type by index. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.deleteCallRecord(Widget.Telephony.CallRecordTypes.MISSED, "123");
+ * 
+ * <span class="attrib">@param</span> {String} callRecordType a String value corresponding to a CallRecordType entry
+ * <span class="attrib">@param</span> {String} id a String value uniquely identifies the call record in the call log. 
+ * This value is assigned by the widget engine.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Telephony.<span class="reserved">prototype</span>.deleteCallRecord = <span class="reserved">function</span>(callRecordType, id) {
+};
+
+<span class="comment">/**
+ * Deletes all call records of the specified call record type. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.deleteAllCallRecords(Widget.Telephony.CallRecordTypes.OUTGOING);
+ * 
+ * <span class="attrib">@param</span> {String} callRecordType a String value corresponding to a CallRecordTypes entry 
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Telephony.<span class="reserved">prototype</span>.deleteAllCallRecords = <span class="reserved">function</span>(callRecordType) {
+};
+
+<span class="comment">/**
+ * Retrieves all call records of the specified call record type having a match against 
+ * the specified fields defined in the comparisonRecord. Supports * as wildcards in 
+ * Strings. Search is case insensitive.&lt;br&gt;
+ * &lt;br&gt;
+ * Widget can specify only return a range of matched files between startInx and endInx. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.onCallRecordsFound = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var record = new CallRecord();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;record.callRecordAddress = "55555555";&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.findCallRecords(record, 0, 9); 
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(callRecords) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ * 
+ * <span class="attrib">@param</span> {CallRecord} comparisonRecord a CallRecord object containing fields to match 
+ * against in the call records. Leave a field blank if you do not wish to check against 
+ * it. If the CallRecordType field is blank, then all CallRecord types are searched. 
+ * Wildcards are supported in the name strings and address strings. To search for records 
+ * in a given time/date range, define the start time for the search in the startTime 
+ * value of the comparisonRecord and set the durationSeconds to reflect the end time for 
+ * the search.
+ * <span class="attrib">@param</span> {Number} startInx an integer value to specify the index the returning search 
+ * results starts from
+ * <span class="attrib">@param</span> {Number} endInx an integer value to specify the index to which the returning 
+ * search results ends at 
+ * 
+ * <span class="attrib">@returns</span> 
+ * <span class="attrib">@type</span> void
+ */</span>
+Telephony.<span class="reserved">prototype</span>.findCallRecords = <span class="reserved">function</span>(comparisonRecord, startInx, endInx) {
+};
+
+<span class="comment">/**
+ * This is a call back method which will be triggered when there's an received
+ * call, missed call or outgoing call. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.onCallEvent = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(callType, phoneNumber) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(callType == "missed") {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var missedCall = phoneNumber;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * 
+ * <span class="attrib">@param</span> {String} callType identifies the type of the call event, possible values are 
+ *                          "received", "missed" and "outgoing" 
+ * <span class="attrib">@param</span> {String} phoneNumber if this is an received or missed call, then this is 
+ *                          the destination phone number; if this is an outgoing
+ *                          call, then this is the source phone number. 
+ * 
+ * <span class="attrib">@returns</span> 
+ * <span class="attrib">@type</span> void
+ */</span>
+Telephony.<span class="reserved">prototype</span>.onCallEvent = <span class="reserved">function</span>(callType, phoneNumber) {
+};
+
+<span class="comment">/**
+ * This is a call back method to invoke when Telephony.findCallRecords completes.  &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.onCallRecordsFound = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var record = new CallRecord();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;record.callRecordAddress = "55555555";&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Telephony.findCallRecords(record, 0, 9); 
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(callRecords) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ * 
+ * <span class="attrib">@param</span> Array callRecords An array of CallRecord objects if either startInx or 
+ * endInx is negative in Telephony.findCallRecords function, the returned callRecordsFound 
+ * will be an empty array. if startInx equals endInx in Telephony.findCallRecords 
+ * function, the returned callRecordsFound will contain only one item whose sequence 
+ * number is startInx. if startInx is greater than endInx in Telephony.findCallRecords 
+ * function, the returned callRecordsFound will be an empty array. if startInx is greater 
+ * than the number of found items in Telephony.findCallRecords function, the returned 
+ * callRecordsFound will be an empty array. if endInx is greater than the number of 
+ * found items in Telephony.findCallRecords function, the returned callRecordsFound 
+ * will contain items bwteeen startInx and the last returned item inclusively.
+ * 
+ * <span class="attrib">@returns</span> 
+ * <span class="attrib">@type</span> void
+ */</span>
+Telephony.<span class="reserved">prototype</span>.onCallRecordsFound = <span class="reserved">function</span>(callRecords) {
+};
+
+<span class="comment">/**
+ *  The type of call record in the call log.
+ * <span class="attrib">@type</span> CallRecordTypes
+ */</span>
+Telephony.<span class="reserved">prototype</span>.CallRecordTypes = new CallRecordTypes();
+
+<span class="comment">/**
+ * The record items in the call log.
+ * <span class="attrib">@type</span> CallRecord
+ */</span>
+Telephony.<span class="reserved">prototype</span>.CallRecord = new CallRecord();
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Aug 14 10:24:05 2009</div>
+</body>
+</html>

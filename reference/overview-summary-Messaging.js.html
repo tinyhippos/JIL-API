@@ -1,0 +1,570 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="Messaging.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>Messaging.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		This file is to be used for listing all functions and properties of 
+ JavaScript objects: Messaging.
+
+ <BR/><BR/><B>Version: </B>0.1<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="Messaging.html">Messaging</a></b></td>
+    <td>Messaging is the container object for JIL Messaging objects.</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/** 
+ * <span class="attrib">@fileoverview</span> This file is to be used for listing all functions and properties of 
+ * JavaScript objects: Messaging.
+ *
+ * <span class="attrib">@version</span> 0.1 
+ */</span>
+Messaging.<span class="reserved">prototype</span> = new Object();
+
+<span class="comment">/**
+ * <span class="attrib">@class</span> Messaging is the container object for JIL Messaging objects. &lt;br&gt;
+ * &lt;br&gt;
+ * Messaging is a sub-object of &lt;I&gt;Widget&lt;/I&gt;. So we use Messaging in this way: 
+ * Widget.Messaging.XXX&lt;br&gt;
+ */</span>
+<span class="reserved">function</span> Messaging() {
+};
+Widget.Messaging.<span class="reserved">prototype</span>=new Messaging();
+<span class="comment">/**
+ * Create a message. It can be a sms, mms or email message. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var msg = Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.SMSMessage);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * document.getElementById("div1").innerHTML = msg.messageType;
+ * 
+ * <span class="attrib">@param</span> {String} messageType the type of the message, The possible values are: "sms", "mms", "email".
+ * 
+ * <span class="attrib">@returns</span> a {<span class="attrib">@link</span> Message} object.
+ * <span class="attrib">@type</span> {<span class="attrib">@link</span> Message}
+ */</span>
+Messaging.<span class="reserved">prototype</span>.createMessage = <span class="reserved">function</span>(messageType) {
+	<span class="reserved">return</span> new Message();
+};
+
+<span class="comment">/**
+ * Delete all messages by specified &lt;i&gt;messageType&lt;/i&gt; and
+ * &lt;i&gt;folderType&lt;/i&gt; parameters. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * Widget.Messaging.deleteAllMessages(Widget.Messaging.MessageTypes.SMSMessage, Widget.Messaging.MessageFolderTypes.INBOX);
+ * 
+ * <span class="attrib">@param</span> {String} messageType the type of the message, the possible values are: "sms", "mms", "email".
+ * <span class="attrib">@param</span> {String} folderType the name of the folder.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.deleteAllMessages = <span class="reserved">function</span>(messageType, folderType) {
+};
+
+<span class="comment">/**
+ * Delete a message with specified MessageType, FolderType, and message id. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var msg = Widget.Messaging.getMessage(Widget.Messaging.MessageTypes.SMSMessage, Widget.Messaging.MessageFolderTypes.INBOX, 3);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+ * Widget.Messaging.deleteMessage(Widget.Messaging.MessageTypes.SMSMessage, Widget.Messaging.MessageFolderTypes.INBOX, msg.messageId);
+ * 
+ * <span class="attrib">@param</span> {String} messageType the type of the message, the possible values are: "sms", "mms", "email".
+ * <span class="attrib">@param</span> {String} folderType the name of the folder.
+ * <span class="attrib">@param</span> {String} id the message id to be deleted.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.deleteMessage = <span class="reserved">function</span>(messageType, folderType, id) {
+};
+
+<span class="comment">/**
+ * Return a message for the specified MessageType, FolderType, and index value. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var msg = Widget.Messaging.getMessage(Widget.Messaging.MessageTypes.SMSMessage, Widget.Messaging.MessageFolderTypes.INBOX, 3);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} messageType the type of the message, the possible values are: "sms", "mms", "email".
+ * <span class="attrib">@param</span> {String} folderType the name of the folder.
+ * <span class="attrib">@param</span> {Number} index the index of message. This field should be an interger value, starting from 0.    
+ *
+ * <span class="attrib">@returns</span> A {<span class="attrib">@link</span> Message} objects. null value will be returned if get the message failed
+ * <span class="attrib">@type</span> {<span class="attrib">@link</span> Message}
+ */</span>
+Messaging.<span class="reserved">prototype</span>.getMessage = <span class="reserved">function</span>(messageType, folderType, index) {
+	<span class="reserved">return</span> new Message();
+};
+
+<span class="comment">/**
+ * Query how many messages of a message type are present in the specified folder. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var v = Widget.Messaging.getMessageQuantities(Widget.Messaging.MessageTypes.SMSMessage, 
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+ * Widget.Messaging.MessageFolderTypes.INBOX);
+ *
+ * <span class="attrib">@param</span> {String} messageType the type of the message, the possible values are: "sms", "mms", "email".
+ * <span class="attrib">@param</span> {String} folderType the type of the folder.
+ *
+ * <span class="attrib">@returns</span> a {<span class="attrib">@link</span> MessageQuantities} object
+ * <span class="attrib">@type</span> {<span class="attrib">@link</span> MessageQuantities}
+ */</span>
+Messaging.<span class="reserved">prototype</span>.getMessageQuantities = <span class="reserved">function</span>(messageType, folderType) {
+	<span class="reserved">return</span> new MessageQuantities();
+};
+
+<span class="comment">/**
+ * Attempt to send the specified message. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg = Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.SMSMessage);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAddress("destination","10086");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.sendMessage(msg);
+ * 
+ * <span class="attrib">@param</span> {Message} msg the message to be send
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.sendMessage = <span class="reserved">function</span>(msg) {
+};
+
+<span class="comment">/**
+ * Move a message to folder. This Method move a message to a folder specified by name.&lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var msg = Widget.Messaging.getMessage(Widget.Messaging.MessageTypes.SMSMessage, Widget.Messaging.MessageFolderTypes.INBOX, 3);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * Widget.Messaging.moveMessageToFolder(msg, Widget.Messaging.MessageFolderTypes.DRAFTS);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {Message} msg the message to be moved
+ * <span class="attrib">@param</span> {String} folderType the destination folder that the message will be moved.  
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.moveMessageToFolder = <span class="reserved">function</span>(msg, folderType) {
+};
+
+<span class="comment">/**
+ * Copy a message to folder. This Method copy a message to a folder specified by name.&lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var msg = Widget.Messaging.getMessage(Widget.Messaging.MessageTypes.SMSMessage, Widget.Messaging.MessageFolderTypes.SENTBOX, 0);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * Widget.Messaging.copyMessageToFolder(msg, Widget.Messaging.MessageFolderTypes.DRAFTS);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {Message} msg the message to be copied.
+ * <span class="attrib">@param</span> {String} folderType the destination folder that the message will be copied to. 
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.copyMessageToFolder = <span class="reserved">function</span>(msg, folderType) {
+};
+
+<span class="comment">/**
+ * Create a folder for specified message type. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * Widget.Messaging.createFolder(Widget.Messaging.MessageTypes.SMSMessage, "myfolder");&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} messageType the type of the message. The possible values are: "sms", "mms", "email".
+ * <span class="attrib">@param</span> {String} folderName the name of the folder to be created.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.createFolder = <span class="reserved">function</span>(messageType, folderName) {
+};
+
+<span class="comment">/**
+ * Delete a folder from folders of specified message type. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * Widget.Messaging.deleteFolder(Widget.Messaging.MessageTypes.SMSMessage, "myfolder");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ *
+ * <span class="attrib">@param</span> {String} messageType the type of the message. The possible values are: "sms", "mms", "email".
+ * <span class="attrib">@param</span> {String} folderName the name of the folder to be deleted.
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.deleteFolder = <span class="reserved">function</span>(messageType, folderName) {
+};
+
+<span class="comment">/**
+ * This is a callback function which will be triggered when a new message comes. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.onMessageArrived = function(msg) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;alert("new Message's coming from: "+msg.sourceAddress);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * 
+ * <span class="attrib">@param</span> {Message} msg the new incoming message 
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.onMessageArrived = <span class="reserved">function</span>(msg) {
+};
+
+<span class="comment">/**
+ * This is a callback function which will be triggled when send a message failed. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * Widget.Messaging.onMessageSendingFailure = function(msg, errCode) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * alert("send message failed, error code: "+errCode);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * }&lt;br&gt;
+ * 
+ * <span class="attrib">@param</span> {Message} msg the message sending failed
+ * <span class="attrib">@param</span> {String} errcode possible values maybe: "1: No networking", "2: Unable to establish network connection", "3: Incompatible payload", "4: Unknown error".
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.onMessageSendingFailure = <span class="reserved">function</span>(msg, errcode) {
+};
+
+<span class="comment">/**
+ * Return an array of the folder names available for the specified message type. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+ * var folderNames = Widget.Messaging.getFolderNames(Widget.Messaging.MessageTypes.SMSMessage);
+ * 
+ * <span class="attrib">@param</span> {String} messageType the type of the message, the possible values are: "sms", "mms", "email".
+ * 
+ * <span class="attrib">@returns</span> An array of String objects.
+ * <span class="attrib">@type</span> Array
+ */</span>
+Messaging.<span class="reserved">prototype</span>.getFolderNames = <span class="reserved">function</span>(messageType) {
+	<span class="reserved">return</span> new Array();
+};
+
+
+<span class="comment">/**
+ * This method search messages with designed condition in specified message box. 
+ * This is an asynchronous function, and will invoke Messaging.onMessagesFound() 
+ * when search completes. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg = Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.SMSMessage);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAddress("destination","10086");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.onMessagesFound = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.findMessages(msg, Widget.Messaging.MessageFolderTypes.INBOX, 0, 9);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(messages) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var size = messages.length;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {Message} comparisonMsg the comparison messaqge which defines the rules for finding.
+ * <span class="attrib">@param</span> {String} folderType the name of the folder. Possible values are "inbox", "outbox", "sentbox", "drafts" and "all".
+ * <span class="attrib">@param</span> {Number} startInx an integer value to specify the index the returning search results starts from
+ * <span class="attrib">@param</span> {Number} endInx an integer value to specify the index to which the returning search results ends at 
+ *
+ * <span class="attrib">@returns</span> 
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.findMessages = <span class="reserved">function</span>(comparisonMsg, folderType, startInx, endInx) {
+};
+
+<span class="comment">/**
+ * Callback method to invoke when Messaging.findMessages completes. &lt;br&gt;
+ * Called asynchronously when the message send to the recipient failed due to mail format error or 
+ * mail/smsc server rejected or network error.
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var msg = Widget.Messaging.createMessage(Widget.Messaging.MessageTypes.SMSMessage);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;msg.addAddress("destination","10086");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.onMessagesFound = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.findMessages(msg, Widget.Messaging.MessageFolderTypes.INBOX, 0, 9);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(messages) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;alert("matched message number: "+ messages.length);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {Array} messagesFound An array of {<span class="attrib">@link</span> Message} objects, null value will be returned if no matched messages
+ * <span class="attrib">@param</span> {String} folderType the name of the folder.
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.onMessagesFound = <span class="reserved">function</span>(messagesFound, folderType) {
+};
+
+<span class="comment">/**
+ * Get current Email account. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var account = Widget.Messaging.getCurrentEmailAccount();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;alert(account.accountName);&lt;br&gt;
+ *
+ * <span class="attrib">@returns</span> Email account Object
+ * <span class="attrib">@type</span> {Account}
+ */</span>
+Messaging.<span class="reserved">prototype</span>.getCurrentEmailAccount = <span class="reserved">function</span>(){
+	<span class="reserved">return</span> new Account();
+};
+
+<span class="comment">/**
+ * Get all Email accounts. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var account = Widget.Messaging.getEmailAccounts();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;alert("Email account number = "+account.length);&lt;br&gt;
+ *
+ * <span class="attrib">@returns</span> Array of Email account Objects
+ * <span class="attrib">@type</span> Array
+ */</span>
+Messaging.<span class="reserved">prototype</span>.getEmailAccounts = <span class="reserved">function</span>(){
+	<span class="reserved">return</span> new Array();
+};
+
+<span class="comment">/**
+ * Set the Email account specified by account ID as default Email account. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var account = Widget.Messaging.getEmailAccounts();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.setCurrentEmailAccount(account[0].accountId);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} AccountId Email account Id
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.setCurrentEmailAccount = <span class="reserved">function</span>(AccountId){
+};
+
+<span class="comment">/**
+ * Delete an Email account specified by account ID. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var account = Widget.Messaging.getEmailAccounts();&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Messaging.deleteEmailAccount(account[1].accountId);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} AccountId Email account Id
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Messaging.<span class="reserved">prototype</span>.deleteEmailAccount = <span class="reserved">function</span>(AccountId) {
+};
+
+<span class="comment">/**
+ * Email account. 
+ * 
+ * <span class="attrib">@type</span> Account
+ */</span>
+Messaging.<span class="reserved">prototype</span>.Account = new Account();
+
+<span class="comment">/**
+ * Attachment types. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var attachment = new Widget.Messaging.Attachment();&lt;br&gt;
+ *
+ * <span class="attrib">@type</span> Attachment
+ */</span>
+Messaging.<span class="reserved">prototype</span>.Attachment = new Attachment();
+
+<span class="comment">/**
+ * Message Object. 
+ * 
+ * <span class="attrib">@type</span> Message
+ */</span>
+Messaging.<span class="reserved">prototype</span>.Message = new Message();
+
+<span class="comment">/**
+ * Message folder types. 
+ * 
+ * <span class="attrib">@type</span> MessageFolderTypes
+ */</span>
+Messaging.<span class="reserved">prototype</span>.MessageFolderTypes = new MessageFolderTypes();
+
+<span class="comment">/**
+ * MessageQuantities types. 
+ * 
+ * <span class="attrib">@type</span> MessageQuantities
+ */</span>
+Messaging.<span class="reserved">prototype</span>.MessageQuantities = new MessageQuantities();
+
+<span class="comment">/**
+ * Message types. 
+ * 
+ * <span class="attrib">@type</span> MessageTypes
+ */</span>
+Messaging.<span class="reserved">prototype</span>.MessageTypes = new MessageTypes();
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Aug 14 10:24:05 2009</div>
+</body>
+</html>

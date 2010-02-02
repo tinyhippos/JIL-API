@@ -1,0 +1,284 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="Camera.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>Camera.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		This file is to be used for listing all functions and properties of 
+ JavaScript objects: Camera.
+
+ <BR/><BR/><B>Version: </B>0.1<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="Camera.html">Camera</a></b></td>
+    <td>Camera is the object for JIL Camera capabilities<br>
+ <br>
+ Camera is a sub-object of <I>Multimedia</I>.</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/** 
+ * <span class="attrib">@fileoverview</span> This file is to be used for listing all functions and properties of 
+ * JavaScript objects: Camera.
+ *
+ * <span class="attrib">@version</span> 0.1 
+ */</span>
+Camera.<span class="reserved">prototype</span> = new Object();
+
+<span class="comment">/**
+ * <span class="attrib">@class</span> Camera is the object for JIL Camera capabilities&lt;br&gt;
+ * &lt;br&gt;
+ * Camera is a sub-object of &lt;I&gt;Multimedia&lt;/I&gt;. We use AudioPlayer in this way:
+ * Widget.Multimedia.Camera.XXX&lt;br&gt;
+ */</span>
+<span class="reserved">function</span> Camera() {
+};
+
+<span class="comment">/**
+ * Capture still image and save to a file. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.onCameraCaptured = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.captureImage("/sdcard/a.jpg", false);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(String fileName) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var v = fileName;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;} &lt;br&gt;
+ * 
+ * <span class="attrib">@param</span> {String} fileName the relative path where the captured image to be 
+ * saved. If filename includes a fullPath, then image file is saved to
+ *  that exact location.
+ * <span class="attrib">@param</span> {Boolean} lowRes the flag to specify if low resolution is used. 
+ *    	    
+ * <span class="attrib">@returns</span> the full path of the saved file. 
+ * This value is identical to the file path provided by onCameraCaptured().
+ * <span class="attrib">@type</span> String
+ */</span>
+Camera.<span class="reserved">prototype</span>.captureImage = <span class="reserved">function</span>(fileName,lowRes) {
+};
+<span class="comment">/**
+ * This method attaches the camera to a DOM object which specifies the preview &lt;br&gt;
+ * window before taking a picture or recording a video.Note:The size of Preview&lt;br&gt;
+ * Window should larger than 32(pixel) * 24(pixel)
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var Div = document.getElementById("CameraDiv");&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var mCamera = Widget.Multimedia.Camera;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; mCamera.setWindow(Div);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {Object} DomObject a DOM object which specifites the  preview window.
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Camera.<span class="reserved">prototype</span>.setWindow = <span class="reserved">function</span>(DomObject) {
+};
+<span class="comment">/**
+ * Start video capture. &lt;br&gt; 
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.onCameraCaptured = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(String fileName) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var v = fileName;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.startVideoCapture("a.3gp", false, 30, true);
+ * 
+ * <span class="attrib">@param</span> {String} fileName the full path where the captured image to be saved. 
+ * If filename includes a fullPath, then image file is saved to that exact location. 
+ * <span class="attrib">@param</span> {Boolean} lowRes the flag to specify if low resolution is used. 
+ * <span class="attrib">@param</span> {Number} maxDurationSeconds the max capture time. The unit is in second. 
+ * This field should be an interger value.
+ * <span class="attrib">@param</span> {Boolean} showDefaultControls the flag to specify whether to show 
+ * default controls.
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Camera.<span class="reserved">prototype</span>.startVideoCapture = <span class="reserved">function</span>(fileName,lowRes,maxDurationSeconds,showDefaultControls) {
+};
+
+<span class="comment">/**
+ * Explicitly stop a video capture in process. &lt;br&gt; 
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.startVideoCapture("a.3gp", false, 30, true);&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.stopVideoCapture();
+ * 
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Camera.<span class="reserved">prototype</span>.stopVideoCapture = <span class="reserved">function</span>() {
+};
+
+<span class="comment">/**
+ * Callback function when the camera stops capturing images or video. &lt;br&gt;
+ * &lt;br&gt;
+ * e.g.&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Camera.onCameraCaptured = myCallBack;&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function myCallBack(String fileName) {&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var v = fileName; &lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br&gt;
+ * &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Widget.Multimedia.Camera.captureImage("/sdcard/a.jpg", false);&lt;br&gt;
+ *
+ * <span class="attrib">@param</span> {String} fileName full path of the saved file.
+ *
+ * <span class="attrib">@returns</span>
+ * <span class="attrib">@type</span> void
+ */</span>
+Camera.<span class="reserved">prototype</span>.onCameraCaptured = <span class="reserved">function</span>(fileName) {
+}
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Aug 14 10:24:05 2009</div>
+</body>
+</html>
