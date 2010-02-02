@@ -2,6 +2,7 @@
 <!--NewPage-->
 <HTML>
 <HEAD>
+<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
 <TITLE>
 AddressBookItem
 </TITLE>
@@ -37,7 +38,7 @@ parent.document.title="AddressBookItem";
 <B></B>
 </EM>
 </TD
-<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.1 Revision 4</B></FONT>&nbsp;</TD>
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.2</B></FONT>&nbsp;</TD>
 </TR>
 
 <TR>
@@ -45,7 +46,7 @@ parent.document.title="AddressBookItem";
 &nbsp;<A HREF="AccountInfo.html"><B>PREV CLASS</B></A><!-- 
    NEXT CLASS 
 -->
-&nbsp;<A HREF="Attachment.html"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="ApplicationTypes.html"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="overview-summary.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
@@ -76,9 +77,11 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <H2>Class AddressBookItem</H2>
 <PRE>Object
    |
-   +--Object
+   +--<a href='Widget.html'>Widget</a>
          |
-         +--<b>AddressBookItem</b>
+         +--<a href='PIM.html'>PIM</a>
+               |
+               +--<b>AddressBookItem</b>
 </PRE>
 
    
@@ -98,7 +101,7 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    <DT>class 
    <B>AddressBookItem</B>
    
-      <DT>extends Object 
+      <DT>extends <a href='PIM.html'>PIM</a> 
    
 
 </DL>
@@ -207,6 +210,36 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    
 
    
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="PIM.html">PIM</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='PIM.html#AddressBookItem'>AddressBookItem</a>, <a href='PIM.html#CalendarItem'>CalendarItem</a>, <a href='PIM.html#EventRecurrenceTypes'>EventRecurrenceTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="Widget.html">Widget</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='Widget.html#Device'>Device</a>, <a href='Widget.html#PIM'>PIM</a>, <a href='Widget.html#Messaging'>Messaging</a>, <a href='Widget.html#Telephony'>Telephony</a>, <a href='Widget.html#Multimedia'>Multimedia</a>, <a href='Widget.html#Exception'>Exception</a>, <a href='Widget.html#ExceptionTypes'>ExceptionTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
 
 <!-- =========== END FIELD SUMMARY =========== -->
 
@@ -352,6 +385,34 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 </TABLE>
 
 
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="PIM.html">PIM</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='PIM.html#addAddressBookItem'>addAddressBookItem</a>, <a href='PIM.html#createAddressBookGroup'>createAddressBookGroup</a>, <a href='PIM.html#createAddressBookItem'>createAddressBookItem</a>, <a href='PIM.html#deleteAddressBookItem'>deleteAddressBookItem</a>, <a href='PIM.html#deleteAddressBookGroup'>deleteAddressBookGroup</a>, <a href='PIM.html#getAddressBookItem'>getAddressBookItem</a>, <a href='PIM.html#getAddressBookItemsCount'>getAddressBookItemsCount</a>, <a href='PIM.html#getAvailableAddressGroupNames'>getAvailableAddressGroupNames</a>, <a href='PIM.html#getAddressBookGroupMembers'>getAddressBookGroupMembers</a>, <a href='PIM.html#findAddressBookItems'>findAddressBookItems</a>, <a href='PIM.html#onAddressBookItemsFound'>onAddressBookItemsFound</a>, <a href='PIM.html#addCalendarItem'>addCalendarItem</a>, <a href='PIM.html#deleteCalendarItem'>deleteCalendarItem</a>, <a href='PIM.html#getCalendarItem'>getCalendarItem</a>, <a href='PIM.html#findCalendarItems'>findCalendarItems</a>, <a href='PIM.html#onCalendarItemsFound'>onCalendarItemsFound</a>, <a href='PIM.html#getCalendarItems'>getCalendarItems</a>, <a href='PIM.html#onCalendarItemAlert'>onCalendarItemAlert</a>, <a href='PIM.html#exportAsVCard'>exportAsVCard</a>, <a href='PIM.html#onVCardExportingFinish'>onVCardExportingFinish</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="Widget.html">Widget</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='Widget.html#onRestore'>onRestore</a>, <a href='Widget.html#onMaximize'>onMaximize</a>, <a href='Widget.html#onFocus'>onFocus</a>, <a href='Widget.html#onWakeup'>onWakeup</a>, <a href='Widget.html#preferenceForKey'>preferenceForKey</a>, <a href='Widget.html#setPreferenceForKey'>setPreferenceForKey</a>, <a href='Widget.html#openURL'>openURL</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
 
 <P>
 <!-- ========== END METHOD SUMMARY =========== -->
@@ -728,7 +789,7 @@ AddressBookItem</H3>
 &nbsp;<A HREF="AccountInfo.html"><B>PREV CLASS</B></A><!-- 
    NEXT CLASS 
 -->
-&nbsp;<A HREF="Attachment.html"><B>NEXT CLASS</B></A></FONT></TD>
+&nbsp;<A HREF="ApplicationTypes.html"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
   <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
 &nbsp;<A HREF="overview-summary.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
@@ -759,6 +820,6 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <FONT SIZE="-1">
 
 </FONT>
-<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Nov 23 16:57:06 2009</div>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Jan 18 11:52:54 2010</div>
 </BODY>
 </HTML>

@@ -2,6 +2,7 @@
 <!--NewPage-->
 <HTML>
 <HEAD>
+<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
 <TITLE>
 Device
 </TITLE>
@@ -37,7 +38,7 @@ parent.document.title="Device";
 <B></B>
 </EM>
 </TD
-<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.1 Revision 4</B></FONT>&nbsp;</TD>
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.2</B></FONT>&nbsp;</TD>
 </TR>
 
 <TR>
@@ -76,7 +77,7 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <H2>Class Device</H2>
 <PRE>Object
    |
-   +--Object
+   +--<a href='Widget.html'>Widget</a>
          |
          +--<b>Device</b>
 </PRE>
@@ -86,7 +87,7 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
       <DT>
          <B>Direct Known Subclasses:</B> 
          <DD>
-                  <a href='Widget/Device.html'>Widget.Device</a>
+                  <a href='DeviceInfo.html'>DeviceInfo</a>, <a href='ApplicationTypes.html'>ApplicationTypes</a>, <a href='File.html'>File</a>, <a href='DataNetworkInfo.html'>DataNetworkInfo</a>, <a href='DeviceStateInfo.html'>DeviceStateInfo</a>, <a href='RadioInfo.html'>RadioInfo</a>, <a href='AccountInfo.html'>AccountInfo</a>, <a href='PowerInfo.html'>PowerInfo</a>, <a href='Widget/Device.html'>Widget.Device</a>, <a href='PositionInfo.html'>PositionInfo</a>
          </DD>
       </DL>
    
@@ -98,7 +99,7 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    <DT>class 
    <B>Device</B>
    
-      <DT>extends Object 
+      <DT>extends <a href='Widget.html'>Widget</a> 
    
 
 </DL>
@@ -139,6 +140,14 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    <TD><CODE><B><A HREF="#AccountInfo">AccountInfo</A></B></CODE>
    <BR>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the device account info.</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;String</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#ApplicationTypes">ApplicationTypes</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ApplicationTypes contains common values that are referenced by the Device.launchApplication.</TD>
    </TR>
    
    <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -235,6 +244,21 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    
 
    
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="Widget.html">Widget</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='Widget.html#Device'>Device</a>, <a href='Widget.html#PIM'>PIM</a>, <a href='Widget.html#Messaging'>Messaging</a>, <a href='Widget.html#Telephony'>Telephony</a>, <a href='Widget.html#Multimedia'>Multimedia</a>, <a href='Widget.html#Exception'>Exception</a>, <a href='Widget.html#ExceptionTypes'>ExceptionTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
 
 <!-- =========== END FIELD SUMMARY =========== -->
 
@@ -289,23 +313,6 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 This method copies the specified file to the path and file name specified in the 
  destinationFullName.
-      </TD>
-   </TR>
-
-   <TR BGCOLOR="white" CLASS="TableRowColor">
-      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
-	 <FONT SIZE="-1">
-	    <CODE>&nbsp;Boolean</CODE>
-	 </FONT>
-      </TD>
-      <TD>
-	 <CODE>
-	    <B>
-	       <A HREF="#createFile">createFile</A></B>(&lt;String&gt; destinationFullName)
-	 </CODE>
-	 <BR>
-	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 This method create the file located at the specified full name.
       </TD>
    </TR>
 
@@ -520,6 +527,20 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 
 
 
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="Widget.html">Widget</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='Widget.html#onRestore'>onRestore</a>, <a href='Widget.html#onMaximize'>onMaximize</a>, <a href='Widget.html#onFocus'>onFocus</a>, <a href='Widget.html#onWakeup'>onWakeup</a>, <a href='Widget.html#preferenceForKey'>preferenceForKey</a>, <a href='Widget.html#setPreferenceForKey'>setPreferenceForKey</a>, <a href='Widget.html#openURL'>openURL</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
 <P>
 <!-- ========== END METHOD SUMMARY =========== -->
 
@@ -539,6 +560,15 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    <PRE><a href="AccountInfo.html">AccountInfo</a>&nbsp;<B>AccountInfo</B></PRE>
    <UL>
    the device account info.
+   
+   </UL>
+   <HR>
+   
+   <A NAME="ApplicationTypes"><!-- --></A>
+   <H3>ApplicationTypes</H3>
+   <PRE>String&nbsp;<B>ApplicationTypes</B></PRE>
+   <UL>
+   ApplicationTypes contains common values that are referenced by the Device.launchApplication.
    
    </UL>
    <HR>
@@ -713,43 +743,6 @@ Device</H3>
       </UL> 
    
      <UL><CODE>destinationFullName</CODE> -  The full name of destination file.    
-      </UL> 
-   
-   </UL>
-   
-   <!-- METHOD PARAMETERS END -->
-
-   
-   <UL>
-   <B>Returns:</B>
-        <UL>
-        A boolean is returned indicating the success of the operation.   
-        </UL>
-   </UL>
-   
-
-   <!-- ADDITIONAL ATTRIBUTES START -->
-   
-   <!-- ADDITIONAL ATTRIBUTES  END -->
-<HR>
-
-   <A NAME="createFile"><!-- --></A>
-   <H3>createFile</H3>
-   <PRE>Boolean <B>createFile</B>(&lt;String&gt; destinationFullName)</PRE>
-   
-      <UL>This method create the file located at the specified full name. The full name
- includes the path and file name. <br>
- <br>
- e.g.<br>
- &nbsp;&nbsp;&nbsp;&nbsp;var v = Widget.Device.createFile("/sdcard/usr/a");</UL>
-   
-
-   <!-- METHOD PARAMETERS START -->
-   
-   <UL>
-   <B>Parameters:</B>
-   
-     <UL><CODE>destinationFullName</CODE> -  The full name of file to be created.    
       </UL> 
    
    </UL>
@@ -1251,6 +1244,6 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <FONT SIZE="-1">
 
 </FONT>
-<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Nov 23 16:57:06 2009</div>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Jan 18 11:52:54 2010</div>
 </BODY>
 </HTML>

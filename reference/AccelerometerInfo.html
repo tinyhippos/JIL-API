@@ -2,6 +2,7 @@
 <!--NewPage-->
 <HTML>
 <HEAD>
+<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
 <TITLE>
 AccelerometerInfo
 </TITLE>
@@ -37,7 +38,7 @@ parent.document.title="AccelerometerInfo";
 <B></B>
 </EM>
 </TD
-<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.1 Revision 4</B></FONT>&nbsp;</TD>
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.2</B></FONT>&nbsp;</TD>
 </TR>
 
 <TR>
@@ -76,9 +77,13 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <H2>Class AccelerometerInfo</H2>
 <PRE>Object
    |
-   +--Object
+   +--<a href='Widget.html'>Widget</a>
          |
-         +--<b>AccelerometerInfo</b>
+         +--<a href='Device.html'>Device</a>
+               |
+               +--<a href='DeviceStateInfo.html'>DeviceStateInfo</a>
+                     |
+                     +--<b>AccelerometerInfo</b>
 </PRE>
 
 
@@ -88,7 +93,7 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    <DT>class 
    <B>AccelerometerInfo</B>
    
-      <DT>extends Object 
+      <DT>extends <a href='DeviceStateInfo.html'>DeviceStateInfo</a> 
    
 
 </DL>
@@ -147,6 +152,51 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    
 
    
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="DeviceStateInfo.html">DeviceStateInfo</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='DeviceStateInfo.html#availableMemory'>availableMemory</a>, <a href='DeviceStateInfo.html#language'>language</a>, <a href='DeviceStateInfo.html#Config'>Config</a>, <a href='DeviceStateInfo.html#keypadLightOn'>keypadLightOn</a>, <a href='DeviceStateInfo.html#backLightOn'>backLightOn</a>, <a href='DeviceStateInfo.html#processorUtilizationPercent'>processorUtilizationPercent</a>, <a href='DeviceStateInfo.html#audioPath'>audioPath</a>, <a href='DeviceStateInfo.html#AccelerometerInfo'>AccelerometerInfo</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="Device.html">Device</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='Device.html#clipboardString'>clipboardString</a>, <a href='Device.html#PowerInfo'>PowerInfo</a>, <a href='Device.html#AccountInfo'>AccountInfo</a>, <a href='Device.html#DeviceInfo'>DeviceInfo</a>, <a href='Device.html#DeviceStateInfo'>DeviceStateInfo</a>, <a href='Device.html#DataNetworkInfo'>DataNetworkInfo</a>, <a href='Device.html#RadioInfo'>RadioInfo</a>, <a href='Device.html#File'>File</a>, <a href='Device.html#PositionInfo'>PositionInfo</a>, <a href='Device.html#widgetEngineName'>widgetEngineName</a>, <a href='Device.html#widgetEngineProvider'>widgetEngineProvider</a>, <a href='Device.html#widgetEngineVersion'>widgetEngineVersion</a>, <a href='Device.html#ApplicationTypes'>ApplicationTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="Widget.html">Widget</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='Widget.html#Device'>Device</a>, <a href='Widget.html#PIM'>PIM</a>, <a href='Widget.html#Messaging'>Messaging</a>, <a href='Widget.html#Telephony'>Telephony</a>, <a href='Widget.html#Multimedia'>Multimedia</a>, <a href='Widget.html#Exception'>Exception</a>, <a href='Widget.html#ExceptionTypes'>ExceptionTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
 
 <!-- =========== END FIELD SUMMARY =========== -->
 
@@ -179,6 +229,48 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <!-- ========== METHOD SUMMARY =========== -->
 
 
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="DeviceStateInfo.html">DeviceStateInfo</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='DeviceStateInfo.html#requestPositionInfo'>requestPositionInfo</a>, <a href='DeviceStateInfo.html#onPositionRetrieved'>onPositionRetrieved</a>, <a href='DeviceStateInfo.html#onScreenChangeDimensions'>onScreenChangeDimensions</a>, <a href='DeviceStateInfo.html#onFlipEvent'>onFlipEvent</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="Device.html">Device</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='Device.html#getFile'>getFile</a>, <a href='Device.html#getDirectoryFileNames'>getDirectoryFileNames</a>, <a href='Device.html#moveFile'>moveFile</a>, <a href='Device.html#copyFile'>copyFile</a>, <a href='Device.html#deleteFile'>deleteFile</a>, <a href='Device.html#findFiles'>findFiles</a>, <a href='Device.html#onFilesFound'>onFilesFound</a>, <a href='Device.html#getFileSystemSize'>getFileSystemSize</a>, <a href='Device.html#setRingtone'>setRingtone</a>, <a href='Device.html#vibrate'>vibrate</a>, <a href='Device.html#getAvailableApplications'>getAvailableApplications</a>, <a href='Device.html#launchApplication'>launchApplication</a>, <a href='Device.html#getFileSystemRoots'>getFileSystemRoots</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="Widget.html">Widget</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='Widget.html#onRestore'>onRestore</a>, <a href='Widget.html#onMaximize'>onMaximize</a>, <a href='Widget.html#onFocus'>onFocus</a>, <a href='Widget.html#onWakeup'>onWakeup</a>, <a href='Widget.html#preferenceForKey'>preferenceForKey</a>, <a href='Widget.html#setPreferenceForKey'>setPreferenceForKey</a>, <a href='Widget.html#openURL'>openURL</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
 
 <P>
 <!-- ========== END METHOD SUMMARY =========== -->
@@ -325,6 +417,6 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <FONT SIZE="-1">
 
 </FONT>
-<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Nov 23 16:57:06 2009</div>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Jan 18 11:52:54 2010</div>
 </BODY>
 </HTML>

@@ -2,6 +2,7 @@
 <!--NewPage-->
 <HTML>
 <HEAD>
+<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
 <TITLE>
 Message
 </TITLE>
@@ -37,7 +38,7 @@ parent.document.title="Message";
 <B></B>
 </EM>
 </TD
-<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.1 Revision 4</B></FONT>&nbsp;</TD>
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1" ALIGN="right">    <FONT CLASS="NavBarFont1"><B>Handset API 1.2</B></FONT>&nbsp;</TD>
 </TR>
 
 <TR>
@@ -76,9 +77,11 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <H2>Class Message</H2>
 <PRE>Object
    |
-   +--Object
+   +--<a href='Widget.html'>Widget</a>
          |
-         +--<b>Message</b>
+         +--<a href='Messaging.html'>Messaging</a>
+               |
+               +--<b>Message</b>
 </PRE>
 
 
@@ -88,7 +91,7 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    <DT>class 
    <B>Message</B>
    
-      <DT>extends Object 
+      <DT>extends <a href='Messaging.html'>Messaging</a> 
    
 
 </DL>
@@ -236,6 +239,36 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
    
 
    
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="Messaging.html">Messaging</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='Messaging.html#Account'>Account</a>, <a href='Messaging.html#Attachment'>Attachment</a>, <a href='Messaging.html#Message'>Message</a>, <a href='Messaging.html#MessageFolderTypes'>MessageFolderTypes</a>, <a href='Messaging.html#MessageQuantities'>MessageQuantities</a>, <a href='Messaging.html#MessageTypes'>MessageTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
+   
+   &nbsp;<A NAME=""><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+   <TD><B>Fields inherited from class <A HREF="Widget.html">Widget</A></B></TD>
+   </TR>
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD><CODE>
+   <a href='Widget.html#Device'>Device</a>, <a href='Widget.html#PIM'>PIM</a>, <a href='Widget.html#Messaging'>Messaging</a>, <a href='Widget.html#Telephony'>Telephony</a>, <a href='Widget.html#Multimedia'>Multimedia</a>, <a href='Widget.html#Exception'>Exception</a>, <a href='Widget.html#ExceptionTypes'>ExceptionTypes</a>
+   </CODE></TD>
+   </TR>
+</TABLE>
+&nbsp;
+
+
 
 <!-- =========== END FIELD SUMMARY =========== -->
 
@@ -364,6 +397,34 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 </TABLE>
 
 
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="Messaging.html">Messaging</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='Messaging.html#createMessage'>createMessage</a>, <a href='Messaging.html#deleteAllMessages'>deleteAllMessages</a>, <a href='Messaging.html#deleteMessage'>deleteMessage</a>, <a href='Messaging.html#getMessage'>getMessage</a>, <a href='Messaging.html#getMessageQuantities'>getMessageQuantities</a>, <a href='Messaging.html#sendMessage'>sendMessage</a>, <a href='Messaging.html#moveMessageToFolder'>moveMessageToFolder</a>, <a href='Messaging.html#copyMessageToFolder'>copyMessageToFolder</a>, <a href='Messaging.html#createFolder'>createFolder</a>, <a href='Messaging.html#deleteFolder'>deleteFolder</a>, <a href='Messaging.html#onMessageArrived'>onMessageArrived</a>, <a href='Messaging.html#onMessageSendingFailure'>onMessageSendingFailure</a>, <a href='Messaging.html#getFolderNames'>getFolderNames</a>, <a href='Messaging.html#findMessages'>findMessages</a>, <a href='Messaging.html#onMessagesFound'>onMessagesFound</a>, <a href='Messaging.html#getCurrentEmailAccount'>getCurrentEmailAccount</a>, <a href='Messaging.html#getEmailAccounts'>getEmailAccounts</a>, <a href='Messaging.html#setCurrentEmailAccount'>setCurrentEmailAccount</a>, <a href='Messaging.html#deleteEmailAccount'>deleteEmailAccount</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TD><B>Methods inherited from class <a href="Widget.html">Widget</a></B></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>
+<!-- Inherited methods -->
+<a href='Widget.html#onRestore'>onRestore</a>, <a href='Widget.html#onMaximize'>onMaximize</a>, <a href='Widget.html#onFocus'>onFocus</a>, <a href='Widget.html#onWakeup'>onWakeup</a>, <a href='Widget.html#preferenceForKey'>preferenceForKey</a>, <a href='Widget.html#setPreferenceForKey'>setPreferenceForKey</a>, <a href='Widget.html#openURL'>openURL</a>
+</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
 
 <P>
 <!-- ========== END METHOD SUMMARY =========== -->
@@ -791,6 +852,6 @@ DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor
 <FONT SIZE="-1">
 
 </FONT>
-<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Nov 23 16:57:06 2009</div>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Mon Jan 18 11:52:54 2010</div>
 </BODY>
 </HTML>
