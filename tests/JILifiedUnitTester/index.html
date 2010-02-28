@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JILified UnitTester</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+    <script type="text/javascript" src="js/jsunity-0.6.js"></script>
+    <script type="text/javascript" src="js/runner.js"></script>
+    <script type="text/javascript" src="js/test_cases/bronze.js"></script>
+    <script type="text/javascript" src="js/test_cases/silver.js"></script>
+    <script type="text/javascript" src="js/test_cases/gold.js"></script>
+	
+  </head>
+  <body>
+    
+    <div class="layout">
+        <div id="runner">
+            <form name="runner_form" action="javascript: return(false);" onsubmit="JILified.Runner.run(this.runner_selector.value);" method="post">
+                <select name="runner_selector">
+                    <option value="all">All</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+                <input type="submit" name="runner_submit" value="Run Test" />
+            </form>
+            
+        </div>
+        <div id="logger"></div>
+    </div>
+    
+  </body>
+</html>

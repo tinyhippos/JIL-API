@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget defaultmode="application">
+	<widgetname>JILified Unit Tester</widgetname>
+	<description>A widget for running JIL API tests and compliance level (gold, silver, bronze) verifications.</description>
+	<icon>images/Icon.png</icon>
+  <width>480</width>
+  <height>684</height>
+  
+  <author>
+    <name></name>
+    <email></email>
+    <organization></organization>
+  </author>
+  <security>
+		<access>
+			<protocol></protocol>
+			<host></host>
+		</access>
+	</security>
+</widget>
