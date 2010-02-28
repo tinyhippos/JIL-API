@@ -27,7 +27,6 @@ JILified.Compliance = {};
                     break;
                 default:
                     throw {name: "ComplianceLevelException", message: "Uknown compliance level, can not run Test Suite(s)." };
-                    return(false);
             }
 
         },
