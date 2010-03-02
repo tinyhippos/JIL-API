@@ -86,14 +86,13 @@ var JILified = {
             
         },
 
-        // TODO, still needs to be a little more robust like assertMethods above (does not fail if property on "obj" but not on "properties")
+        // TODO, still needs to be a little more robust like assertMethods
         assertProperties: function (obj, properties){
             var property;
             for (property in properties){
-
-                jsUnity.assertions.assertTrue(obj.hasOwnProperty(property), "property was undefined.");
-                jsUnity.assertions.assertTypeOf(properties[property], obj[property]);
-
+                if(obj.hasOwnProperty(property)){
+                    jsUnity.assertions.assertTypeOf(properties[property], obj[property]);
+                }
             }
         }
         
