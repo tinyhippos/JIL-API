@@ -1,14 +1,18 @@
 
-(JILified.Compliance.Gold = {
+(JILified.Compliance.Gold = function($){
 
-    suiteName: "-- Gold Compliance Test",
+    return {
 
-    setUp: function(){
+        suiteName: "-- Gold Compliance Test",
+
+        setUp: function(){
+            
+        },
         
-    },
-    
-    tearDown: function(){
+        tearDown: function(){
+            
+        }
         
-    }
+    };
 
-});
+}(JILified));

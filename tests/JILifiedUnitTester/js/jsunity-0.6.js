@@ -315,7 +315,7 @@ jsUnity = (function () {
 
         log: function () {},
 
-        error: function (s) { this.log("[ERROR] " + s); },
+        error: function (s) { this.log('<span style="color: red;">[ERROR]</span> ' + s); },
 
         compile: function (v) {
             if (v instanceof jsUnity.TestSuite) {
@@ -350,8 +350,8 @@ jsUnity = (function () {
 
                 var cnt = suite.tests.length;
 
-                this.log("<br />Running "
-                    + (suite.suiteName || "unnamed test suite"));
+                this.log("<br /><strong>Running "
+                    + (suite.suiteName || "unnamed test suite") + "</strong>");
                 this.log(plural(cnt, "test") + " found");
     
                 suiteNames.push(suite.suiteName);
@@ -367,11 +367,11 @@ jsUnity = (function () {
 
                         results.passed++;
 
-                        this.log("[PASSED] " + test.name);
+                        this.log('<span style="color: green;">[PASSED]</span>&nbsp;&nbsp;' + test.name);
                     } catch (e) {
                         suite.tearDown && suite.tearDown();
 
-                        this.log("[FAILED] " + test.name + ": " + e);
+                        this.log('<span style="color: red;">[FAILED]</span>&nbsp;&nbsp;&nbsp;&nbsp;' + test.name + ": " + e);
                     }
                 }
             }
@@ -380,7 +380,7 @@ jsUnity = (function () {
             results.failed = results.total - results.passed;
             results.duration = jsUnity.env.getDate() - start;
 
-            this.log("<br /><br />RESULTS:<br />");
+            this.log("<br /><br /><strong>RESULTS:</strong><br />");
             this.log(plural(results.passed, "test") + " passed");
             this.log(plural(results.failed, "test") + " failed");
             this.log(plural(results.duration, "millisecond") + " elapsed");

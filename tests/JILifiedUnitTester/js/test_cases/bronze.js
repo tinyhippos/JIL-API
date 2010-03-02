@@ -1,30 +1,68 @@
 
-(JILified.Compliance.Bronze = {
+(JILified.Compliance.Bronze = function($){
 
-    suiteName: "-- Bronze Compliance Test",
-
-    setUp: function(){
+    return {
         
-    },
-    
-    tearDown: function(){
+        suiteName: "-- Bronze Compliance Test",
+
+        setUp: function(){
+            
+        },
         
-    },
+        tearDown: function(){
+            
+        },
 
-    test_Widget_object_exists: function(){
-        jsUnity.assertions.assertNotNull(Widget);
-    },
+        // ---------------------- Widget.Exception ---------------------- \\
+        
+        test_Exception_exists: function(){
+            jsUnity.assertions.assertTrue(Widget.Exception);
+        },
 
-    test_Widget_Exception_exists: function(){
-        jsUnity.assertions.assertNotNull(Widget.Exception);
-    },
+        test_Exception_has_expected_properties: function(){
 
-    test_Widget_ExceptionTypes_exists: function(){
-        jsUnity.assertions.assertNotNull(Widget.ExceptionTypes);
-    },
+            $.UnitTestHelpers.assertProperties(new Widget.Exception(), {
+                message: "string",
+                type: "string"
+            });
+            
+        },
 
-    test_XMLHttpRequest_exists: function(){
-        jsUnity.assertions.assertNotNull(XMLHttpRequest);
-    }
+        test_Exception_can_be_thrown_properly: function(){
+            
+            var exception = new Widget.Exception();
+            exception.message = "test exception message";
+            exception.type = "testype";
+            
+            try{ throw exception; }
+            catch (e){
+                jsUnity.assertions.assertEqual(e.message, "test exception message");
+                jsUnity.assertions.assertEqual(e.type, "testype");
+            }
+            
+        },
 
-});
+        // ---------------------- Widget.ExceptionTypes ---------------------- \\
+        
+        test_ExceptionTypes_exists: function(){
+            jsUnity.assertions.assertTrue(Widget.ExceptionTypes);
+        },
+
+        test_ExceptionTypes_has_expected_properties: function (){
+            $.UnitTestHelpers.assertProperties(Widget.ExceptionTypes, {
+                INVALID_PARAMETER: "string",
+                SECURITY: "string",
+                UNKNOWN: "string",
+                UNSUPPORTED: "string"
+            });
+        },
+
+        // ---------------------- XMLHttpRequest ---------------------- \\
+
+        test_XMLHttpRequest_exists: function(){
+            jsUnity.assertions.assertTrue(XMLHttpRequest);
+        }
+        
+    };
+
+}(JILified));

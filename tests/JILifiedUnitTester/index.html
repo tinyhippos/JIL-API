@@ -6,11 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
     <script type="text/javascript" src="js/jsunity-0.6.js"></script>
+    <script type="text/javascript" src="../../../ripple/solution/api.js"></script>
     <script type="text/javascript" src="js/runner.js"></script>
+    <script type="text/javascript" src="js/test_cases/base.js"></script>
     <script type="text/javascript" src="js/test_cases/bronze.js"></script>
     <script type="text/javascript" src="js/test_cases/silver.js"></script>
     <script type="text/javascript" src="js/test_cases/gold.js"></script>
-	
   </head>
   <body>
     
@@ -19,6 +20,7 @@
             <form name="runner_form" action="javascript: return(false);" onsubmit="JILified.Runner.run(this.runner_selector.value);" method="post">
                 <select name="runner_selector">
                     <option value="all">All</option>
+                    <option value="base">Base</option>
                     <option value="bronze">Bronze</option>
                     <option value="silver">Silver</option>
                     <option value="gold">Gold</option>
