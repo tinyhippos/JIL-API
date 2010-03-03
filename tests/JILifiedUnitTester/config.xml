@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget defaultmode="application">
-	<widgetname>JILified Unit Tester</widgetname>
-	<description>A widget for running JIL API tests and compliance level (gold, silver, bronze) verifications.</description>
-	<icon>images/Icon.png</icon>
-  <width>480</width>
-  <height>684</height>
-  
-  <author>
-    <name></name>
-    <email></email>
-    <organization></organization>
-  </author>
-  <security>
-		<access>
-			<protocol></protocol>
-			<host></host>
-		</access>
-	</security>
+<?xml version="1.0" encoding="UTF-8"?>
+<widget  xmlns="http://www.w3.org/ns/widgets"
+          xmlns:JIL="http://www.jil.org/ns/widgets1.2"
+         xmlns:its="http://www.w3.org/2005/11/its"
+         id="http://example.org/JILifiedUnitTester"
+         version="1.0.Beta"
+         height="684" width="440"
+         viewmodes="floating">
+    <JIL:maximum_display_mode height="684" width="440"/>
+    <JIL:update href="http://www.jil.org/widgets/" period="2"/>
+    <JIL:access network="true" localfs="true" remote_scripts="false"/>
+    <JIL:billing required="false"/>
+    <icon src="Icon.png"/>
+    <content src="index.html" encoding="UTF-8" type="text/html"/>
+    <preference name="apikey" value="ea31ad3a23fd2f" readonly="true"/>
+    <name short="testwidget">JILified Unit Tester</name>
+    <description>A widget for running JIL API tests and compliance level (gold, silver, bronze) verifications.</description>
+    <license  href="http://license.example.org/">Example license Copyright (c) 2008.</license>
+    <author  email="myname@host" href="http://foo-bar.example.org/">myname</author>
 </widget>

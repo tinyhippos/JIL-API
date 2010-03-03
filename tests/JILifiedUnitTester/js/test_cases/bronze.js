@@ -21,7 +21,7 @@
 
         test_Exception_has_expected_properties: function(){
 
-            $.UnitTestHelpers.assertProperties(new Widget.Exception(), {
+            $.UnitTestHelpers.assertProperties(Widget.Exception, {
                 message: "string",
                 type: "string"
             });
@@ -29,14 +29,14 @@
         },
 
         test_Exception_can_be_thrown_properly: function(){
-            
-            var exception = new Widget.Exception();
-            exception.message = "test exception message";
+            // TODO: look into more, so does this mean you can have race conditions where this Static Exception object is used around the same time?
+            var exception = Widget.Exception;
+            exception.message = "message";
             exception.type = "testype";
             
             try{ throw exception; }
             catch (e){
-                jsUnity.assertions.assertEqual(e.message, "test exception message");
+                jsUnity.assertions.assertEqual(e.message, "message");
                 jsUnity.assertions.assertEqual(e.type, "testype");
             }
             
