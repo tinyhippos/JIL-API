@@ -14,10 +14,10 @@
     <script type="text/javascript" src="js/test_cases/gold.js"></script>
   </head>
   <body>
-    
+  
     <div class="layout">
         <div id="runner">
-            <form name="runner_form" action="javascript: return(false);" onsubmit="JILified.Runner.run(this.runner_selector.value);" method="post">
+            <form name="runner_form" onsubmit="JILified.Runner.run(this.runner_selector.value); return false;" method="post">
                 <select name="runner_selector">
                     <option value="all">All</option>
                     <option value="base">Base</option>

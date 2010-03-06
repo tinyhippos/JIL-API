@@ -185,10 +185,10 @@ jsUnity = (function () {
             throw "Invalid function.";
         }
         
-        return ({
+        return {
             name: tokens[1].length ? tokens[1] : undefined,
             body: tokens[2]
-        });
+        };
     }
     
     var probeOutside = function () {
