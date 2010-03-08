@@ -7,14 +7,19 @@ var JILified = {
 
     return {
 
-        run: function (complianceLevel){
+        run: function (complianceLevel, verbose){
 
             $.Logger.clear();
+
+            $.Logger.verbose = verbose || false;
 
             switch (complianceLevel) {
                 
                 case "all":
                     jsUnity.run($.Compliance.Base, $.Compliance.Bronze, $.Compliance.Silver, $.Compliance.Gold);
+                    break;
+                case "experimental":
+                    jsUnity.run($.Compliance.Experimental);
                     break;
                 case "base":
                     jsUnity.run($.Compliance.Base);
@@ -31,7 +36,7 @@ var JILified = {
                 default:
                     throw {name: "ComplianceLevelException", message: "Uknown compliance level, can not run Test Suite(s)." };
             }
-
+            
         }
         
     };
@@ -46,12 +51,20 @@ var JILified = {
 
     return {
 
+        verbose: false,
+
         logError: function (e){
             this.log('<span style="color: red;"><br/>'+e.stack+"<br/>");
         },
 
         log: function (e){
             document.getElementById(LOGGER_DIV).innerHTML += "<br />"+e;
+        },
+        
+        note: function (e){
+            if(this.verbose){
+                document.getElementById(LOGGER_DIV).innerHTML += "<br /><span style=\"color: #FF4848\">"+e+"<span>";
+            }
         },
 
         clear: function (){
@@ -61,45 +74,6 @@ var JILified = {
     };
     
 }(JILified));
-
-
-// ----------------- Test Helpers ----------------- \\
-(JILified.UnitTestHelpers = function ($){
-
-    return {
-
-        assertMethods: function(obj, methods){
-            
-            methods = methods || {};
-
-            jsUnity.assertions.assertTrue(obj);
-
-            for (var method in methods){
-                jsUnity.assertions.assertTypeOf("function", obj[method], "method was expected on object but not found: "+method);
-            }
-
-            for (var item in obj){
-                if(obj.hasOwnProperty(item) && typeof obj[item] === 'function'){
-                    jsUnity.assertions.assertNotUndefined("Public method found but not expected:"+item, methods[item])
-                }
-            }
-            
-        },
-
-        // TODO, still needs to be a little more robust like assertMethods
-        assertProperties: function (obj, properties){
-            var property;
-            for (property in properties){
-                if(obj.hasOwnProperty(property)){
-                    jsUnity.assertions.assertTypeOf(properties[property], obj[property]);
-                }
-            }
-        }
-        
-    };
-    
-}(JILified));
-
 
 
 // ----------------- jsUnity config and execution ----------------- \\

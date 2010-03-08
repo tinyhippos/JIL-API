@@ -3,45 +3,42 @@
  */
 
 html, body{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: 100%;
-  height: 100%;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 body{ font-size: 0.81em; }
 
 a{
-  outline: none;
-  text-decoration: underline;
-  text-transform: capitalize;
-  cursor: pointer;
-  color: #EEEEEE;
+    outline: none;
+    text-decoration: underline;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #EEEEEE;
 }
 
 img{  border: 0; margin: 0; padding: 0; }
 
 table, tr, td{
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-input:hover, textarea:hover, button:hover{
-  color: #777777;
-  background: #F0F0F0;
-}
-
-textarea, input, button{
-  padding: 0.6em;
+input:hover, textarea:hover, button:hover, select:hover{
+    cursor: pointer;
+    color: #777777;
+    background: #F0F0F0;
 }
 
 textarea, input, button, select{
-  background: #EEEEEE;
-  color: #1E1E1E;
-  padding: 0.4em;
-  border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    color: #1E1E1E;
+    padding: 0.1em 0.4em;
+    border: 1px solid #CCCCCC;
 }
 
 h1, h2, h3, p{ margin: 0; }
@@ -61,14 +58,17 @@ h3{ font-size: 1.00em; }
  */
 
 .layout{
-	width: 100%;
-	height: 100%;
+    max-height: 684px;
+    max-width: 900px;
     padding: 2em;
     margin: 0 auto;
     position: relative;
     color: #1E1E1E;
-    border: 1px solid #CCCCCC;
     background: #FFFFFF;
+}
+
+.runner_form{
+    text-align: center;
 }
 
 #logger{

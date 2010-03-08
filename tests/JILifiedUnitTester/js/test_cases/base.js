@@ -1,5 +1,5 @@
 
-// ---------- Any tests that apply to all (or JIL missed), or tighter tests such as Exception throwing ---------- \\
+// ---------- Any tests that apply to all (or JIL missed) ---------- \\
 (JILified.Compliance.Base = function($){
 
     return {

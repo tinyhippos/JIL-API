@@ -4,9 +4,9 @@
          xmlns:its="http://www.w3.org/2005/11/its"
          id="http://example.org/JILifiedUnitTester"
          version="1.0.Beta"
-         height="684" width="440"
+         height="684" width="480"
          viewmodes="floating">
-    <JIL:maximum_display_mode height="684" width="440"/>
+    <JIL:maximum_display_mode height="684" width="480"/>
     <JIL:update href="http://www.jil.org/widgets/" period="2"/>
     <JIL:access network="true" localfs="true" remote_scripts="false"/>
     <JIL:billing required="false"/>

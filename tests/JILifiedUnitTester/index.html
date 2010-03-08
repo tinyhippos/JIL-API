@@ -5,27 +5,37 @@
     <title>JILified UnitTester</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
-    <script type="text/javascript" src="js/jsunity-0.6.js"></script>
+    <script type="text/javascript" src="js/thirdparty/jsunity-0.6.js"></script>
 
     <script type="text/javascript" src="js/runner.js"></script>
+    <script type="text/javascript" src="js/lib/Utils.js"></script>
+    <script type="text/javascript" src="js/lib/Exception.js"></script>
+    <script type="text/javascript" src="js/lib/UnitTestHelpers.js"></script>
+
+    <!-- Test Cases -->
     <script type="text/javascript" src="js/test_cases/base.js"></script>
+    <script type="text/javascript" src="js/test_cases/experimental.js"></script>
     <script type="text/javascript" src="js/test_cases/bronze.js"></script>
     <script type="text/javascript" src="js/test_cases/silver.js"></script>
     <script type="text/javascript" src="js/test_cases/gold.js"></script>
+    
   </head>
   <body>
   
     <div class="layout">
         <div id="runner">
-            <form name="runner_form" onsubmit="JILified.Runner.run(this.runner_selector.value); return false;" method="post">
+            <form class="runner_form" name="runner_form" onsubmit="JILified.Runner.run(this.runner_selector.value, this.runner_verbose.checked); return false;" method="post">
                 <select name="runner_selector">
                     <option value="all">All</option>
                     <option value="base">Base</option>
+                    <option value="experimental">Experimental</option>
                     <option value="bronze">Bronze</option>
                     <option value="silver">Silver</option>
                     <option value="gold">Gold</option>
                 </select>
-                <input type="submit" name="runner_submit" value="Run Test" />
+                <button>Run</button>
+                <button onclick="JILified.Logger.clear(); return false;">Clear</button>
+                <input type="checkbox" name="runner_verbose" value="1" />Verbose
             </form>
             
         </div>
