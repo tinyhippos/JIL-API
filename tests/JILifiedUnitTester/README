@@ -1,4 +1,6 @@
-A widget (or web app) for runing unit tests on various JIL API functionality (including running against Bronze, Silver and Gold compliance leves). Can also be used to detect functional changes (or breakages) in future API releases.
+A widget (or web app) for runing unit tests on various JIL API functionality
+(including running against Bronze, Silver and Gold compliance leves).
+Can also be used to detect functional changes (or breakages) in future API releases.
 
 
 *** Beware! ***
