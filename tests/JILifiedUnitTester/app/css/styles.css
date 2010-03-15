@@ -76,11 +76,13 @@ h3{ font-size: 1.00em; }
 }
 
 #test_logger{
-    max-height: 400px;
+    max-height: 350px;
+    height: 350px;
 }
 
 #info_logger{
-    max-height: 300px;
+    max-height: 250px;
+    height: 250px;
 }
 
 
