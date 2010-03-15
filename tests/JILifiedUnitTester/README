@@ -20,10 +20,10 @@ Bronze
 * JIL Bronze level compliance tests
 
 Silver
-* JIL Silver level compliance tests (includes Bronze)
+* JIL Silver level compliance tests
 
 Gold
-* JIL Gold level compliance tests (includes Bronze and Silver)
+* JIL Gold level compliance tests
 
 Experimental
 * extra tests that are experimental, explorative or non-spec.

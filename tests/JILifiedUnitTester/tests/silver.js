@@ -1,5 +1,5 @@
 
-(JILified.Compliance.Silver = function($){
+(jsUnityRunner.Tests.Silver = function($){
 
     return {
         suiteName: "-- Silver Compliance Test",
@@ -116,14 +116,14 @@
             }
             catch (e){
                 
-                var msg;
-                if(e instanceof Widget.Exception){
-                    msg = "Widget.Exception ::  ";
-                }else{
-                    msg = "Exception was thrown but not expected! name ::";
-                }
+                //var msg;
+                //if(e instanceof Widget.Exception){
+                    //msg = "Widget.Exception ::  ";
+                //}else{
+                    //msg = "Exception was thrown but not expected! name ::";
+                //}
 
-                jsUnity.assertions.fail(msg+e.name+" message: "+e.message);
+                jsUnity.assertions.fail(e.type+" message: "+e.message);
                 
             }
         },
@@ -137,19 +137,19 @@
             }
             catch (e){
                 
-                var msg;
-                if(e instanceof Widget.Exception){
-                    msg = "Widget.Exception ::  ";
-                }else{
-                    msg = "Exception was thrown but not expected! name ::";
-                }
+                //var msg;
+                //if(e instanceof Widget.Exception){
+                    //msg = "Widget.Exception ::  ";
+                //}else{
+                    //msg = "Exception was thrown but not expected! name ::";
+                //}
 
-                jsUnity.assertions.fail(msg+e.name+" message: "+e.message);
+                jsUnity.assertions.fail(e.type+" message: "+e.message);
                 
             }
         }
         
     };
 
-}(JILified));
+}(jsUnityRunner));
 

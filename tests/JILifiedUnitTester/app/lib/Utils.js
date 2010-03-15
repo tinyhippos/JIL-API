@@ -1,7 +1,5 @@
 // ----------------- Utils ----------------- \\
-(JILified.Utils = function ($){
-
-    var _DIV_BARCODES = "#barcodes";
+(jsUnityRunner.Utils = function ($){
 
     return {
 
@@ -39,11 +37,11 @@
         validateNumberOfArguments: function (lowerBound, upperBound, numberOfArguments){
 
 			if (arguments.length < 3 || arguments.length > 3) {
-				$.Exception.throwException($.Exception.types.Argument, "Wrong number of arguments when calling: tinyHippos.Utils.validateNumberOfArguments()");
+				$.Exception.raise($.Exception.types.Argument, "Wrong number of arguments when calling: tinyHippos.Utils.validateNumberOfArguments()");
 			}
 
 			if (isNaN(lowerBound) && isNaN(upperBound) && isNaN(numberOfArguments)) {
-				$.Exception.throwException($.Exception.types.ArgumentType, "Arguments are not numbers");
+				$.Exception.raise($.Exception.types.ArgumentType, "Arguments are not numbers");
 			}
 
 			lowerBound = parseInt(lowerBound, 10);
@@ -51,7 +49,7 @@
 			numberOfArguments = parseInt(numberOfArguments, 10);
 
 			if (numberOfArguments < lowerBound || numberOfArguments > upperBound) {
-				$.Exception.throwException($.Exception.types.ArgumentLength, "Wrong number of arguments");
+				$.Exception.raise($.Exception.types.ArgumentLength, "Wrong number of arguments");
 			}
 
 		},
@@ -69,7 +67,7 @@
 					if (typeof arg !== argType){ invalidArg = true; }
                 break;
             }
-            if(invalidArg) { $.Exception.throwException($.Exception.types.ArgumentType, "Invalid Argument type. argument: " + arg + " ==> was expected to be of type: " + argType); }
+            if(invalidArg) { $.Exception.raise($.Exception.types.ArgumentType, "Invalid Argument type. argument: " + arg + " ==> was expected to be of type: " + argType); }
 		},
 
 		validateMultipleArgumentTypes: function (argArray, argTypeArray){
@@ -80,4 +78,4 @@
         
     };
     
-}(JILified));
+}(jsUnityRunner));

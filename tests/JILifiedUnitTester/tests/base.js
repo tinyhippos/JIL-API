@@ -1,6 +1,6 @@
 
 // ---------- Any tests that apply to all (or JIL missed) ---------- \\
-(JILified.Compliance.Base = function($){
+(jsUnityRunner.Tests.Base = function($){
 
     return {
         
@@ -39,4 +39,4 @@
         // ---------------------- WidgetManager base test cases ---------------------- //
     };
 
-}(JILified));
+}(jsUnityRunner));

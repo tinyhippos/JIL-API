@@ -1,5 +1,5 @@
 // ----------------- Test Helpers ----------------- \\
-(JILified.UnitTestHelpers = function ($){
+(jsUnityRunner.UnitTestHelpers = function ($){
 
     //takes an array of arguments and returns a subset
     // was going to use something like Array.slice but arguments is weird half Array with no .slice method
@@ -29,7 +29,7 @@
         
         try{ func.apply(namespace, funcArgs); }
         catch (e){
-            $.Logger.note("handled exception --> "+(e.name || e.type)+" :: "+e.message);
+            $.Logger.warn("handled exception --> "+(e.name || e.type)+" :: "+e.message);
             if(e.stack){ $.Logger.note("Stack --> "+e.stack); }
             
             if(typeof callback === 'function'){
@@ -89,4 +89,4 @@
         
     };
     
-}(JILified));
+}(jsUnityRunner));
