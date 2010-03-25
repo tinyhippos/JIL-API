@@ -1,5 +1,5 @@
 
-(JILified.Compliance.Gold = function($){
+(jsUnityRunner.Tests.Gold = function($){
 
     return {
 
@@ -15,4 +15,4 @@
         
     };
 
-}(JILified));
+}(jsUnityRunner));

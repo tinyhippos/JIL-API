@@ -2,45 +2,65 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>JILified UnitTester</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <title>JILified + jsUnityRunner</title>
 
-    <script type="text/javascript" src="js/thirdparty/jsunity-0.6.js"></script>
-
-    <script type="text/javascript" src="js/runner.js"></script>
-    <script type="text/javascript" src="js/lib/Utils.js"></script>
-    <script type="text/javascript" src="js/lib/Exception.js"></script>
-    <script type="text/javascript" src="js/lib/UnitTestHelpers.js"></script>
+	<link rel="stylesheet" type="text/css" href="app/css/styles.css"/>
+    <script type="text/javascript" src="app/thirdparty/jsunity-0.6.js"></script>
+    
+    <script type="text/javascript" src="app/init.js"></script>
+    <script type="text/javascript" src="app/lib/Constants.js"></script>
+    <script type="text/javascript" src="app/lib/API.js"></script>
+    <script type="text/javascript" src="app/lib/Runner.js"></script>
+    <script type="text/javascript" src="app/lib/Logger.js"></script>
+    <script type="text/javascript" src="app/lib/Exception.js"></script>
+    <script type="text/javascript" src="app/lib/UnitTestHelpers.js"></script>
+    <script type="text/javascript" src="app/lib/Utils.js"></script>
 
     <!-- Test Cases -->
-    <script type="text/javascript" src="js/test_cases/base.js"></script>
-    <script type="text/javascript" src="js/test_cases/experimental.js"></script>
-    <script type="text/javascript" src="js/test_cases/bronze.js"></script>
-    <script type="text/javascript" src="js/test_cases/silver.js"></script>
-    <script type="text/javascript" src="js/test_cases/gold.js"></script>
+    <script type="text/javascript" src="tests/base.js"></script>
+    <script type="text/javascript" src="tests/experimental.js"></script>
+    <script type="text/javascript" src="tests/bronze.js"></script>
+    <script type="text/javascript" src="tests/silver.js"></script>
+    <script type="text/javascript" src="tests/gold.js"></script>
     
   </head>
   <body>
-  
     <div class="layout">
+    
+        <div id="progress">
+            <div id="progress_text"></div>
+            <div id="progress_scroll" style="width: 0; background-color: #40D940;"></div>
+        </div>
+        
         <div id="runner">
-            <form class="runner_form" name="runner_form" onsubmit="JILified.Runner.run(this.runner_selector.value, this.runner_verbose.checked); return false;" method="post">
-                <select name="runner_selector">
-                    <option value="all">All</option>
-                    <option value="base">Base</option>
-                    <option value="experimental">Experimental</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
+        
+            <form name="runner_form" onsubmit="return false;" method="get">
+            
+                <select id="runner_selector" name="runner_selector">
+					<option value="all">All</option>
                 </select>
-                <button>Run</button>
-                <button onclick="JILified.Logger.clear(); return false;">Clear</button>
-                <input type="checkbox" name="runner_verbose" value="1" />Verbose
+                
+                <button name="runner_submit" onclick="jsUnityRunner.Runner.run(runner_form.runner_selector.value, runner_form.runner_verbose.checked);">Run</button>
+                
+                <button onclick="location.reload(); return false;">Reload</button>
+                <button onclick="jsUnityRunner.Runner.clear(); return false;">Clear</button>
+                
+				<label>Verbose</label><input type="checkbox" name="runner_verbose" value="1" />
+                
             </form>
             
         </div>
-        <div id="logger"></div>
+
+        <div id="test_logger"></div>
+        <div id="info_logger"></div>
+        
     </div>
-    
+
+    <!-- ----------------------- TEST MARKUP HERE ------------------------------ -->
+    <div id="markup" class="irrelevant">
+
+    </div>
+    <!-- ----------------------- TEST MARKUP HERE ------------------------------ -->
+
   </body>
 </html>

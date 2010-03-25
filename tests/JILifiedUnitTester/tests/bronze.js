@@ -1,5 +1,5 @@
 
-(JILified.Compliance.Bronze = function($){
+(jsUnityRunner.Tests.Bronze = function($){
 
     return {
         
@@ -65,4 +65,4 @@
         
     };
 
-}(JILified));
+}(jsUnityRunner));
