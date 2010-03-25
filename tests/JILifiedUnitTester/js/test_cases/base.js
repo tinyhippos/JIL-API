@@ -18,6 +18,7 @@
 
         test_Widget_object_exists: function(){
             jsUnity.assertions.assertNotNull(Widget);
+            jsUnity.assertions.assertNotUndefined(Widget);
         },
 
         // ---------------------- Widget base test cases ---------------------- //
@@ -26,6 +27,7 @@
 
         test_WidgetManager_object_exists: function(){
             jsUnity.assertions.assertNotNull(WidgetManager);
+            jsUnity.assertions.assertNotUndefined(WidgetManager);
         },
 
         test_WidgetManager_has_expected_methods: function(){
