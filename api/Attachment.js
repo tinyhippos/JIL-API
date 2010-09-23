@@ -14,7 +14,7 @@ Attachment.prototype = new Messaging();
  */
 function Attachment() {
 };
-Widget.Messaging.Attachment.prototype= new Attachment();
+//Widget.Messaging.Attachment.prototype= new Attachment();
 /**
  * The name of this Attachment. <br>
  * <br>

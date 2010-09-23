@@ -14,7 +14,7 @@ Messaging.prototype = new Widget();
  */
 function Messaging() {
 };
-Widget.Messaging.prototype=new Messaging();
+//Widget.Messaging.prototype=new Messaging();
 /**
  * Create a message. It can be a sms, mms or email message. <br>
  * <br>

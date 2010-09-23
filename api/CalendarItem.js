@@ -12,7 +12,7 @@ CalendarItem.prototype = new PIM();
  */
 function CalendarItem() {
 };
-Widget.PIM.CalendarItem.prototype= new CalendarItem();
+//Widget.PIM.CalendarItem.prototype= new CalendarItem();
 /** 
  * A unique indicator (potentially assigned by the WRT) for identifying the calendar event
  * 

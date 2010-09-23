@@ -13,7 +13,7 @@ PIM.prototype = new Widget();
  */
 function PIM() {
 };
-Widget.PIM.prototype= new PIM();
+//Widget.PIM.prototype= new PIM();
 /**
  * Add a contact to the device. <br>
  * <br>

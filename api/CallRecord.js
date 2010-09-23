@@ -11,7 +11,7 @@ CallRecord.prototype = new Telephony();
  */
 function CallRecord() {
 };
-Widget.Telephony.CallRecord.prototype= new CallRecord();
+//Widget.Telephony.CallRecord.prototype= new CallRecord();
 /**
  * A String indicating the type of call record, i.e. "received", "outgoing", "missed".
  * This corresponds to the constants defined in the CallRecordType object.

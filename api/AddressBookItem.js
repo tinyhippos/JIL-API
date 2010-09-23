@@ -14,7 +14,7 @@ AddressBookItem.prototype = new PIM();
 function AddressBookItem() {
 };
 
-Widget.PIM.AddressBookItem.prototype= new AddressBookItem();
+//Widget.PIM.AddressBookItem.prototype= new AddressBookItem();
 
 /** 
  * This is a unique indicator (potentially assigned by the WRT) for identifying the contact.

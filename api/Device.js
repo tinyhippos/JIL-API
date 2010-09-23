@@ -17,7 +17,7 @@ Device.prototype = new Widget();
  */
 function Device() {
 };
-Widget.Device.prototype=new Device();
+//Widget.Device.prototype=new Device();
 /**
  * This provides access to a File object located at the specified full path and name. 
  * This fullName should correspond to the <I>fullName</I> property of the file, which 

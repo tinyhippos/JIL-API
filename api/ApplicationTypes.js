@@ -76,3 +76,53 @@ ApplicationTypes.prototype.GAMES = new String();
  * @type String
  */
 ApplicationTypes.prototype.MAIL = new String();
+
+/**
+ * This represents the messaging application on the device.
+ * 
+ * @type String
+ */
+
+ApplicationTypes.prototype.MESSAGING = new String();
+/**
+ * This represents the picture viewer application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.PICTURES = new String();
+/**
+ * This represents the settings application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.SETTINGS = new String();
+/**
+ * This represents the "to do list" application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.TASKS = new String();
+/**
+ * This represents the mediaplayer application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.MEDIAPLAYER = new String();
+/**
+ * This represents the program Manager application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.PROG_MANAGER = new String();
+/**
+ * This represents the widget manager application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.WIDGET_MANAGER = new String();
+/**
+ * This represents the dialer application on the device.
+ * 
+ * @type String
+ */
+ApplicationTypes.prototype.PHONECALL = new String();

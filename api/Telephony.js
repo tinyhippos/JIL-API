@@ -14,7 +14,7 @@ Telephony.prototype = new Widget();
  */
 function Telephony() {
 };
-Widget.Telephony.prototype= new Telephony();
+//Widget.Telephony.prototype= new Telephony();
 /**
  * Automatically initiates an outgoing voice call with the string specified. Expected to 
  * invoke the native dialer application.<br>

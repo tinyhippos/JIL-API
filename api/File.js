@@ -12,7 +12,7 @@ File.prototype = new Device();
  */
 function File() {
 };
-Widget.Device.File.prototype=new File();
+//Widget.Device.File.prototype=new File();
 /**
  * The Date on which the file was first created. If the host operating system does not 
  * support this value, then the value will be the same as that of lastModifyDate. If 
